@@ -1,0 +1,81 @@
+#diferencial {
+    margin: 5% 10%;
+    text-align: center;
+}
+
+#titulo-diferencial {
+    color: #630043;
+    font-size: 2.5em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.traco {
+    background-color: #febdf2;
+	height: 13px;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    margin-top: -11px;
+}
+
+#subtitulo-diferencial {
+    color: #bbb;
+    font-size: 2.3em;
+    line-height: 80%;
+    margin-bottom: 5%;
+}
+
+#lista-diferenciais {
+    display: flex;
+    justify-content: center;
+    color: #bbb;
+    list-style-type:none;
+    width: 100%;
+}
+
+.item-lista-diferenciais {
+    margin: 0 1%;
+}
+
+.imagens-redondas {
+    align-self: center;
+    width: 70%;
+    height: auto;
+}
+
+.nome-diferencial {
+    color: #630043;
+}
+
+.desc-diferencial {
+    color: #b872a2;
+}
+
+#avaliacao {
+    text-align: center;
+    margin-top: 10%;
+}
+
+#slogan {
+    color: #630043;
+    display: inline-block;
+    margin-top: 50px;
+    font-size: 2em;
+}
+
+#btn-avaliacao {
+    background-color: #630043;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.7%;
+    font-size: 1.1em;
+    display: block;
+    width: 27%;
+    font-weight: bold;
+    margin: 30px auto 150px auto;
+}
