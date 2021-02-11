@@ -1,0 +1,25 @@
+#jornada-cliente {
+    background: url('img/jornada_home.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    /*padding-top: 90%;*/
+    margin: 0 10%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 50%;
+}
+
+.grid-item {
+    margin-bottom: 70%;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
