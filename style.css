@@ -27,12 +27,13 @@ body, html {
     padding: 4% 15%;
     font-family: Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
+    padding-top: 2%;
 }
 
 #CARP-inner-title {
     color: #630043;
     font-size: 150%;
-    font-weight: normal;
+    font-weight: normal; 
 }
 
 .verde-bold {
@@ -59,7 +60,8 @@ body, html {
 }
 
 .CARP-block:hover {
-    background-color: #eca5d9;
+    background-color: #85cc79;
+    box-shadow: 0 0 0.8em rgba(0, 0, 0, 0.363);
 }
 
 .CARP-title {
@@ -74,3 +76,76 @@ body, html {
     font-weight: bold;
 }
 
+@media only screen and (max-width: 1150px){
+    .CARP-inner-blocks {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 10px;
+    }
+    
+    .CARP-block{
+        width:40%;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .CARP-txt{
+        font-size: 15px;
+    }
+
+    .CARP-title{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .CARP-inner-blocks {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 10px;
+    }
+    
+    .CARP-block{
+        width:40%;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .CARP-txt{
+        font-size: 13px;
+    }
+
+    .CARP-title{
+        font-size: 17px;;
+    }
+}
+
+@media only screen and (max-width: 570px){
+    .CARP-inner-blocks {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 1px;
+    }
+    
+    .CARP-block{
+        width:65%;
+        height: 135px;
+        justify-content: center;
+        margin: 5px;
+    }
+
+    .CARP-txt{
+        font-size: 12px;
+    }
+
+    .CARP-title{
+        font-size: 16px;
+    }
+
+    #CARP-inner-title{
+        font-size: 19px;
+    }
+}
