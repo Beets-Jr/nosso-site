@@ -1,0 +1,76 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*Cor+fundo da fonte quando for selecionada com o mouse*/
+::-moz-selection {
+    background-color: #630043;
+    color: white;
+}
+
+/*Cor+fundo da fonte quando for selecionada*/
+::selection {
+    background-color: #630043;
+    color: white;
+}
+
+.CARP {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    background-color: #ffe6f9;
+}
+
+.CARP-inner {
+    padding: 4% 15%;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+#CARP-inner-title {
+    color: #630043;
+    font-size: 150%;
+    font-weight: normal;
+}
+
+.verde-bold {
+    color: #459437;
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.CARP-inner-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: space-around;
+    padding: 5px 25px;
+}
+
+.CARP-block {
+    width: 23%;
+    background-color: #d887c3;
+    border-radius: 15px;
+}
+
+.CARP-block:hover {
+    background-color: #eca5d9;
+}
+
+.CARP-title {
+    color: white;
+    font-weight: bold;
+    padding: 2px 2px;
+}
+
+.CARP-txt {
+    color: #630043;
+    padding: 1px 15px;
+    font-weight: bold;
+}
+
