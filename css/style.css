@@ -1,3 +1,23 @@
+/* FONTE */
+
+@font-face {
+    font-family: Qanelas-light;
+    src: url(../QanelasSoftUltraLight.otf)
+}
+
+@font-face {
+    font-family: Qanelas-bold;
+    src: url(../QanelasSoftBold.otf)
+}
+
+body {
+    font-family: 'Qanelas-bold';
+}
+
+.soft{
+    font-family: 'Qanelas-light';
+}
+
 #diferencial {
     margin: 5% 10%;
     text-align: center;
@@ -22,7 +42,7 @@
 
 #subtitulo-diferencial {
     color: #bbb;
-    font-size: 2.3em;
+    font-size: 2em;
     line-height: 80%;
     margin-bottom: 5%;
 }
