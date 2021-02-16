@@ -1,15 +1,10 @@
-@font-face {
-    font-family: "Qanelas";
-    src: url("fonts/QanelasSoftExtraBold") format('woff');
-}
-
 html, body {
-    height: 100%;
+    /* height: 100%; */
     font-family: 'Open Sans', sans-serif;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
-.cd-container {
+.jornada-cliente {
     width: 90%;
     max-width: 1080px;
     margin: 0 auto;
@@ -17,13 +12,15 @@ html, body {
     border-radius: 2px;
 }
 
-.cd-container::after {
+/* é útil? excluir se não estiver alinhando */
+.jornada-cliente::after {
     content: '';
     display: table;
     clear: both;
 }
 
 /* -------------------------------- Main components -------------------------------- */
+
 #linha {
     position: relative;
     padding: 2em 0;
@@ -31,85 +28,88 @@ html, body {
     margin-bottom: 2em;
 }
 
+/* corrigir tamanho */
 #linha::before {
     content: '';
     position: absolute;
     top: 0;
-    left: 25px;
+    left: 5%;
     height: 100%;
-    width: 4px;
+    width: 14px;
     background: #7F005B;
+    background-image: linear-gradient(#fff, #b872a2, #7f005b, #630043);
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1024px) {
     #linha {
         margin-top: 3em;
         margin-bottom: 3em;
    }
     #linha::before {
-        left: 50%;
-        margin-left: -2px;
+        left: 49.4%;
    }
 }
 
-.cd-timeline-block {
+.item-jornada {
     position: relative;
     margin: 2em 0;
 }
 
-.cd-timeline-block:after {
+/* é útil? excluir se não estiver alinhando */
+.item-jornada:after {
     content: "";
     display: table;
     clear: both;
 }
 
-.cd-timeline-block:first-child {
+.item-jornada:first-child {
     margin-top: 0;
 }
 
-.cd-timeline-block:last-child {
+/* corrigir tamanho da linha, depois de usar bolinha */
+.item-jornada:last-child {
     margin-bottom: 0;
 }
 
-@media only screen and (min-width: 1170px) {
-    .cd-timeline-block {
+@media only screen and (min-width: 1024px) {
+    .item-jornada {
         margin: 4em 0;
    }
-    .cd-timeline-block:first-child {
-        margin-top: 0;
+    .item-jornada:first-child {
+        margin-top: -8%;
    }
-    .cd-timeline-block:last-child {
-        margin-bottom: 0;
+    .item-jornada:last-child {
+        margin-bottom: -8%;
    }
 }
 
-.ponto {
+.bolinha {
     position: absolute;
     top: 8px;
-    left: 12px;
+    left: 3.6%;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    box-shadow: 0 0 0 4px #7F005B, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
-}
-.ponto {
-    background: #ffffff;
+    box-shadow: 0 0 0 4px #B872A2, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+    background: #fff;
 }
 
-@media only screen and (min-width: 1170px) {
-    .ponto {
+@media only screen and (min-width: 1024px) {
+    .bolinha {
         width: 30px;
         height: 30px;
         left: 50%;
         margin-left: -15px;
         margin-top: 15px;
-       /* Force Hardware Acceleration in WebKit */
+        /* Force Hardware Acceleration in WebKit */
+        transform: translateZ(0);
         -webkit-transform: translateZ(0);
+        backface-visibility: hidden;
         -webkit-backface-visibility: hidden;
    }
 }
 
-.cd-timeline-content {
+.item-jornada-conteudo {
     position: relative;
     margin-left: 60px;
     margin-right: 30px;
@@ -117,100 +117,81 @@ html, body {
     padding: 1em;
 }
 
-.cd-timeline-content .timeline-content-info i {
-    margin-right: 5px;
-}
-
-.cd-timeline-content .timeline-content-info .timeline-content-info-title, .cd-timeline-content .timeline-content-info .timeline-content-info-date {
-    width: calc(50% - 2px);
-    display: inline-block;
-}
-
-@media (max-width: 500px) {
-    .cd-timeline-content .timeline-content-info .timeline-content-info-title, .cd-timeline-content .timeline-content-info .timeline-content-info-date {
-        display: block;
-        width: 100%;
-   }
-}
-
-.cd-timeline-content:after {
+/* é útil? excluir se não estiver alinhando */
+.item-jornada-conteudo:after {
     content: "";
     display: table;
     clear: both;
 }
-.cd-timeline-content h2 {
+
+/* ajustar tamanho da letra para outros tamanhos de tela (menores) */
+.item-jornada-conteudo h3 {
     margin-top: 0;
     margin-bottom: 5px;
-}
-.cd-timeline-content p {
-    font-size: 13px;
-    font-size: 0.8125rem;
+    font-size: 30px;
+    color: #630043;
 }
 
-.cd-timeline-content .imagem {
-    display: inline-block
-}
-
-.cd-timeline-content p {
+.item-jornada-conteudo p {
+    font-size: 16px;
     margin: 1em 0;
     line-height: 1.6;
+    color: #7F005B;
 }
 
-@media only screen and (min-width: 768px) {
-    .cd-timeline-content h2 {
+.item-jornada-conteudo .imagem {
+    display: inline-block;
+}
+
+.item-jornada-conteudo img {
+    width: 50%;
+}
+
+.item-jornada-conteudo .imagem {
+    width: 70%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .item-jornada-conteudo h3 {
         font-size: 20px;
-        font-size: 1.25rem;
     }
-    .cd-timeline-content p {
-        font-size: 16px;
-        font-size: 1rem;
-    }
-    .cd-timeline-content .cd-read-more {
-        font-size: 14px;
-        font-size: 0.875rem;
+    .item-jornada-conteudo p {
+        font-size: 13px;
     }
 }
 
-@media only screen and (min-width: 1170px) {
-    .cd-timeline-content {
+@media only screen and (min-width: 1024px) {
+    .item-jornada-conteudo {
         margin-left: 0;
         padding: 1.6em;
         width: 36%;
         margin: 0 5%;
     }
 
-    .cd-timeline-content .imagem {
+    .item-jornada-conteudo .imagem {
         position: absolute;
         width: 100%;
         left: 122%;
-        top: 6px;
-        font-size: 16px;
-        font-size: 1rem;
+        top: -60px;
     }
 
-    .cd-timeline-block:nth-child(even) .cd-timeline-content {
+    .item-jornada:nth-child(odd) .item-jornada-conteudo {
         float: right;
     }
 
-    .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
-        top: 24px;
-        left: auto;
-        right: 100%;
-        border-color: transparent;
-        border-right-color: #333c42;
-    }
-
-    .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
-        float: right;
-    }
-    
-    .cd-timeline-block:nth-child(even) .cd-timeline-content .imagem {
+    .item-jornada:nth-child(odd) .item-jornada-conteudo .imagem {
         left: auto;
         right: 122%;
+        text-align: right;
+    }
+
+    .item-jornada:nth-child(even) .item-jornada-conteudo p, .item-jornada:nth-child(even) .item-jornada-conteudo h3 {
         text-align: right;
     }
 }
 
 #descricao {
     text-align: center;
+    margin-bottom: 10%;
+    color: #3F8532;
 }
