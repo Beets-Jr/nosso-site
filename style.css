@@ -1,3 +1,5 @@
+/*CARP*/
+
 body, html {
     height: 100%;
     margin: 0;
@@ -131,21 +133,43 @@ body, html {
     }
     
     .CARP-block{
-        width:65%;
-        height: 135px;
+        width:69%;
+        height: 142px;
         justify-content: center;
         margin: 5px;
     }
 
     .CARP-txt{
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .CARP-title{
-        font-size: 16px;
+        font-size: 15px;
     }
 
     #CARP-inner-title{
         font-size: 19px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    
+    .CARP-block{
+        width:75%;
+        height: 138px;
+        justify-content: center;
+        margin: 5px;
+    }
+
+    .CARP-txt{
+        font-size: 10px;
+    }
+
+    .CARP-title{
+        font-size: 14px;
+    }
+
+    #CARP-inner-title{
+        font-size: 16px;
     }
 }
