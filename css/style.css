@@ -10,12 +10,17 @@
     src: url(../QanelasSoftBold.otf)
 }
 
+@font-face {
+    font-family: Qanelas-medium;
+    src: url(../QanelasSoftMedium.otf)
+}
+
 body {
     font-family: 'Qanelas-bold';
 }
 
-.soft{
-    font-family: 'Qanelas-light';
+.medium{
+    font-family: 'Qanelas-medium';
 }
 
 #diferencial {
@@ -57,9 +62,62 @@ body {
 
 .item-lista-diferenciais {
     padding: 0 1%;
-    margin-top: 1%;
+    margin-top: 2%;
     max-width: 20%;
     min-width: 200px;
+}
+
+.retangulo-cinza-1 {
+    background-color: rgba(187, 187, 187, 0.4);
+	height: 160px;
+    border: 0;
+    position: relative;
+    width: 250%;
+    margin-left: -100%;
+    margin-top: -130px;
+    z-index: -1;
+}
+
+.retangulo-cinza-2 {
+    background-color: rgba(187, 187, 187, 0.4);
+	height: 160px;
+    border: 0;
+    position: relative;
+    width: 250%;
+    margin: -130px -20% 0 -20%;
+    z-index: -1;
+}
+
+.retangulo-cinza-3 {
+    background-color: rgba(187, 187, 187, 0.4);
+	height: 160px;
+    border: 0;
+    position: relative;
+    width: 250%;
+    margin: -130px -20% 0 -20%;
+    z-index: -1;
+}
+
+.retangulo-cinza-4 {
+    background-color: rgba(187, 187, 187, 0.4);
+	height: 160px;
+    border: 0;
+    position: relative;
+    width: 250%;
+    margin: -120px -20% 0 -20%;
+    z-index: -1;
+}
+
+@media only screen and (min-width:1107px) {
+    .retangulo-cinza-2, .retangulo-cinza-3, .retangulo-cinza-4 {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:799px) {
+    .retangulo-cinza-3, .retangulo-cinza-4 {
+        display: none;
+    }
 }
 
 .imagens-redondas {
@@ -70,6 +128,7 @@ body {
 }
 
 .nome-diferencial {
+    margin-top: -5%;
     color: #630043;
     text-transform: uppercase;
     font-size: 1.5em;
@@ -107,7 +166,7 @@ body {
     font-weight: bold;
     margin: 30px auto 150px auto;
 }
-@media only screen and (max-width: 1100px){
+@media only screen and (max-width: 1105px){
     .item-lista-diferenciais{
         max-width: 20%;
         min-width: 300px;
@@ -117,7 +176,7 @@ body {
 @media only screen and (max-width: 750px){
     .item-lista-diferenciais{
         max-width: 20%;
-        min-width: 200px;
+        min-width: 300px;
     }
 }
 
