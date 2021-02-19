@@ -209,7 +209,6 @@ html, body {
 
 #descricao {
     text-align: center;
-    max-width: fit-content;
     margin-bottom: 10%;
     color: #3F8532;
 }
