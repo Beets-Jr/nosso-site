@@ -2,21 +2,21 @@
 
 @font-face {
     font-family: Qanelas-light;
-    src: url(../QanelasSoftUltraLight.otf)
+    src: url(QanelasSoftUltraLight.otf)
 }
 
 @font-face {
     font-family: Qanelas-bold;
-    src: url(../QanelasSoftBold.otf)
+    src: url(QanelasSoftBold.otf)
 }
 
 @font-face {
     font-family: Qanelas-medium;
-    src: url(../QanelasSoftMedium.otf)
+    src: url(QanelasSoftMedium.otf)
 }
 
 body {
-    font-family: 'Qanelas-bold';
+    font-family: 'Qanelas-medium';
 }
 
 .medium{
@@ -600,7 +600,7 @@ body {
 
 .traco {
     background-color: #febdf2;
-	height: 13px;
+  	height: 13px;
     border: 0;
     border-radius: 10px;
     width: 80%;
@@ -634,8 +634,8 @@ body {
 	height: 160px;
     border: 0;
     position: relative;
-    width: 250%;
-    margin-left: -100%;
+    width: 125.5%;
+    margin-left: -13%;
     margin-top: -130px;
     z-index: -1;
 }
@@ -665,7 +665,7 @@ body {
 	height: 160px;
     border: 0;
     position: relative;
-    width: 250%;
+    width: 100%;
     margin: -120px -20% 0 -20%;
     z-index: -1;
 }
@@ -728,6 +728,12 @@ body {
     font-weight: bold;
     margin: 30px auto 150px auto;
 }
+
+.setas-home {
+  width: 100%;
+  margin-top: -49.8%
+}
+
 @media only screen and (max-width: 1105px){
     .item-lista-diferenciais{
         max-width: 20%;
