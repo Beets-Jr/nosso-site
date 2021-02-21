@@ -1,20 +1,52 @@
 @font-face {
     font-family: Qanelas-light;
-    src: url(../QanelasSoftUltraLight.otf)
+    src: url(QanelasSoftUltraLight.otf)
 }
 
 @font-face {
     font-family: Qanelas-bold;
-    src: url(../QanelasSoftBold.otf)
+    src: url(QanelasSoftBold.otf)
 }
 
 @font-face {
     font-family: Qanelas-medium;
-    src: url(../QanelasSoftMedium.otf)
+    src: url(QanelasSoftMedium.otf)
 }
 
 body {
     font-family: 'Qanelas-medium';
+}
+
+.pitch {
+    margin-top: 7%;
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.img-pitch{
+    width: 37%;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 5%;
+    float: left;
+}
+
+.desc-pitch {
+    float: right;
+    vertical-align: top;
+    color: #7f005b;
+    font-size: 1.8em;
+    margin-right: 7%;
+    text-align: right;
+}
+
+.desc-pitch b {
+    color: #b872a2;
+}
+
+.solucoes {
+    color: #3f8532;
+    font-weight: bold;
 }
 
 #fale-conosco {
