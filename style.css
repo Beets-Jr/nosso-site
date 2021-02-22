@@ -1,7 +1,5 @@
 html, body {
-    /* height: 100%; */
     font-family: 'Open Sans', sans-serif;
-    /* box-sizing: border-box; */
 }
 
 .jornada-cliente {
@@ -12,7 +10,6 @@ html, body {
     border-radius: 2px;
 }
 
-/* é útil? excluir se não estiver alinhando */
 .jornada-cliente::after {
     content: '';
     display: table;
@@ -26,7 +23,6 @@ html, body {
     margin-bottom: 2em;
 }
 
-/* corrigir tamanho */
 #linha::before {
     content: '';
     position: absolute;
@@ -41,7 +37,6 @@ html, body {
 @media only screen and (max-width: 1024px) {
     #linha::before {
         height: 100%;
-        /* margin-bottom: -50%; */
    }
 }
 
@@ -60,7 +55,6 @@ html, body {
     margin: 2em 0;
 }
 
-/* é útil? excluir se não estiver alinhando */
 .item-jornada:after {
     content: "";
     display: table;
@@ -68,13 +62,42 @@ html, body {
 }
 
 .item-jornada:first-child {
-    margin-top: 0;
+    margin-top: -8%;
 }
 
-/* corrigir tamanho da linha, depois de usar bolinha */
-.item-jornada:last-child {
-    margin-bottom: -60%;
+@media only screen and (max-width: 570px) {
+    .item-jornada:first-child {
+        margin-top: -13%;
+    }
 }
+
+.item-jornada:last-child {
+    margin-bottom: -190px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .item-jornada:last-child {
+        margin-bottom: -140px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .item-jornada:last-child {
+        margin-bottom: -150px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .item-jornada:last-child {
+        margin-bottom: -190px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .item-jornada:last-child {
+        margin-bottom: -220px;
+    }        
+}        
 
 @media only screen and (min-width: 1024px) {
     .item-jornada {
@@ -118,11 +141,9 @@ html, body {
     position: relative;
     margin-left: 60px;
     margin-right: 30px;
-    /* border-radius: 2px; */
     padding: 0.8em;
 }
 
-/* é útil? excluir se não estiver alinhando */
 .item-jornada-conteudo:after {
     content: "";
     display: table;
@@ -168,10 +189,14 @@ html, body {
     }
     .item-jornada-conteudo .imagem {
         max-width: 50%;
-        position:absolute;
-        top:20%;
-        left:42%;
-    } 
+        position: absolute;
+        top: 20%;
+        left: 42%;
+    }
+    .item-jornada-conteudo img {
+        min-width: 120px;
+        object-fit: contain;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
