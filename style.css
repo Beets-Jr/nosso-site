@@ -989,21 +989,52 @@ body {
 
 #orcamento-jornada {
 	text-align: center;
-    background-color: #630043;
-    border: none;
-    border-radius: 5px;
+	background-color: #630043;
+	border: none;
+	border-radius: 20px;
 	width: 40%;
-	margin: 0 auto;
+	margin: 200px auto 0 auto;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
+@media only screen and (max-width: 800px) {
+    #orcamento-jornada {
+        margin-top: 150px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #orcamento-jornada {
+        margin-top: 190px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    #orcamento-jornada {
+        margin-top: 220px;
+    }        
+}        
+
+@media only screen and (min-width: 1024px) {
+    #orcamento-jornada {
+        margin-top: 1%;
+   }
+}
+
+@media only screen and (max-width: 600px) {
+    #orcamento-jornada {
+      width: 50%;
+    }
+}
+
 #frase-orcamento {
 	color: #fff;
 	display: inline-block;
-	margin-top: 3%;
+	margin: 5% 3% 3% 3%;
 	font-size: 1.3em;
+	flex-basis: 100%
 }
 
 #btn-jornada {
@@ -1017,5 +1048,6 @@ body {
     font-size: 1em;
     display: block;
     width: 40%;
+    margin-bottom: 5%;
 }
 /* FIM DA JORNADA DO CLIENTE */
