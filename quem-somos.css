@@ -47,6 +47,7 @@ body {
 
 /* Padrão desktop (mais de 960px) */
 #banner-titulo{
+    text-transform: uppercase;
     font-size: 60px;
     max-width: 60%;
     top: 47%;
