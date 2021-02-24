@@ -17,6 +17,7 @@
 
 body {
     font-family: 'Qanelas-medium';
+	overflow-x: hidden;
 }
 
 .medium{
@@ -586,7 +587,6 @@ body {
 }
 
 #diferencial {
-    margin: 5% 10%;
     text-align: center;
 }
 
@@ -629,55 +629,42 @@ body {
     min-width: 200px;
 }
 
-.retangulo-cinza-1 {
-    background-color: rgba(187, 187, 187, 0.4);
+.ret-cinza {
+	background-color: rgba(187, 187, 187, 0.4);
 	height: 160px;
     border: 0;
     position: relative;
-    width: 125.5%;
-    margin-left: -13%;
-    margin-top: -130px;
-    z-index: -1;
+	z-index: -1;
 }
 
-.retangulo-cinza-2 {
-    background-color: rgba(187, 187, 187, 0.4);
-	height: 160px;
-    border: 0;
-    position: relative;
-    width: 250%;
+.rc1 {
+    width: 114%;
+	margin: -130px 0 0 -13%;
+}
+
+.rc2 {
+    width: 114%;
     margin: -130px -20% 0 -20%;
-    z-index: -1;
 }
 
-.retangulo-cinza-3 {
-    background-color: rgba(187, 187, 187, 0.4);
-	height: 160px;
-    border: 0;
-    position: relative;
-    width: 250%;
+.rc3 {
+    width: 114%;
     margin: -130px -20% 0 -20%;
-    z-index: -1;
 }
 
-.retangulo-cinza-4 {
-    background-color: rgba(187, 187, 187, 0.4);
-	height: 160px;
-    border: 0;
-    position: relative;
+.rc4 {
     width: 100%;
     margin: -120px -20% 0 -20%;
-    z-index: -1;
 }
 
 @media only screen and (min-width:1107px) {
-    .retangulo-cinza-2, .retangulo-cinza-3, .retangulo-cinza-4 {
+    .rc2, .rc3, .rc4 {
         display: none;
     }
 }
 
 @media only screen and (min-width:799px) {
-    .retangulo-cinza-3, .retangulo-cinza-4 {
+    .rc3, .rc4 {
         display: none;
     }
 }
@@ -704,13 +691,22 @@ body {
 
 #avaliacao {
     text-align: center;
-    margin-top: 10%;
+    background-image: url('img/detalhe_fundo_home.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width: 800px) {
+	#avaliacao {
+		background-size: contain;
+	}
 }
 
 #slogan {
-    color: #630043;
+	color: #630043;
     display: inline-block;
-    margin-top: 50px;
+	margin: 50px auto 0 auto;
     font-size: 2em;
 }
 
@@ -726,7 +722,7 @@ body {
     display: block;
     width: 27%;
     font-weight: bold;
-    margin: 30px auto 150px auto;
+    margin: 30px auto;
 }
 
 .setas-home {
@@ -754,4 +750,26 @@ body {
         justify-content: center;
         margin: 10px;
     }
+}
+
+@media only screen and (max-width: 796px) {
+	#diferencial p{
+		font-size: 1em;
+	}
+	#titulo-diferencial {
+		font-size: 2em;
+	}
+	#slogan {
+		font-size: 1.5em;
+	} 
+	#diferencial h4 {
+		font-size: 1.3em;
+	}
+	#diferencial h5 {
+		font-size: 1.1em;
+	}
+	#btn-avaliacao {
+		width:auto;
+		font-size: 0.9em;
+	}
 }
