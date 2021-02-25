@@ -14,61 +14,107 @@
 }
 
 body {
-    font-family: 'Qanelas-medium';
+    font-family: 'Qanelas-medium', Calibri;
 }
 
-#fale-conosco {
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%; 
-    justify-content: center;   
-    margin: 0 auto;
-}
-
-#titulo-fale-conosco {
-    background-color: #b872a2;
-    color: #fff;
-    font-size: 2em;
-    text-align: center;
-    border: none;
-    border-radius: 8px;
-    margin: 0 auto -30px auto;
-    padding: 0.5% 2%;
-    height: 85%;
-}
-
-#linha-fale-conosco {
+/*Banner*/
+#banner {
     width: 100%;
-    border: 2px dashed #630343;
-    border-style: none none dashed;
-    margin-bottom: 4%;
-    z-index: -1;
+    position: relative;
+  /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Qanelas-medium', Calibri;
 }
 
-#frase-formulario {
-    flex-basis: 100%;
-    text-align: center;
-    color: #b872a2;
-    margin-bottom: 4%;
+.banner-img {
+    position: relative;
+    width: 100%;
 }
 
-#formulario {
-    font-family: Qanelas-bold;
-    text-align: right;
+/*---BANNER---*/
+
+.banner-txt {
+    text-align: left;
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    transform: translate(-55%, -30%);
     color: #630043;
 }
 
-.campos-forms {
-    border-radius: 9px;
-    border-color: rgb(138, 128, 128);
-    border-width: 1px;
-    margin: 0 0 5px 10px;
-    padding: 10px 25px;
-    width: 50%;
-    vertical-align: top;
+
+/* Padrão desktop (mais de 960px) */
+#banner-titulo{
+    text-transform: uppercase;
+    font-size: 60px;
+    max-width: 60%;
+    top: 47%;
+    padding-bottom: 15px;
+    font-weight: bold;
 }
 
-#formulario label {
-    display: inline-block;
-    margin-top: 6px;
+#banner-subtitulo{
+    font-size: 32px;
+    max-width: 80%;
+}
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+    .banner-txt{
+        top: 40%;
+    }
+
+    #banner-titulo {
+        font-size: 50px;
+        max-width: 60%;
+        top: 45%;
+    }
+    #banner-subtitulo {
+        font-size: 25px;
+        max-width: 80%;
+        top: 40%;
+    }
+}
+
+/* Mobile Tablet (devices and browser) */
+@media only screen and (max-width: 800px) {
+    #banner-titulo{
+        font-size: 40px;
+        max-width: 60%;
+        top: 40%;
+    }
+    #banner-subtitulo {
+        font-size: 20px;
+        max-width: 80%;
+        top: 38%;
+    }
+}
+
+/* Mobile (devices and browser) */
+@media only screen and (max-width: 550px) {
+    
+    #banner-titulo {
+        font-size: 27px;
+        max-width: 70%;
+    }
+    #banner-subtitulo {
+        font-size: 14px;
+        max-width: 80%;
+        top: 20%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    
+    #banner-titulo {
+        font-size: 20px;
+        max-width: 70%;
+    }
+    #banner-subtitulo {
+        font-size: 10px;
+        max-width: 80%;
+        top: 20%;
+    }
 }
