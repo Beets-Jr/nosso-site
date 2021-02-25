@@ -15,6 +15,10 @@
     src: url(QanelasSoftMedium.otf)
 }
 
+html {
+	overflow-x: hidden;
+}
+
 body {
     font-family: 'Qanelas-medium';
 	overflow-x: hidden;
@@ -663,7 +667,7 @@ body {
     }
 }
 
-@media only screen and (min-width:799px) {
+@media only screen and (min-width:790px) {
     .rc3, .rc4 {
         display: none;
     }
@@ -674,6 +678,12 @@ body {
     width: 50%;
     height: auto;
     margin-bottom: 20%;
+}
+
+@media only screen and (max-width: 789px) {
+	.kyomen {
+		padding-bottom: 3%;
+	}
 }
 
 .nome-diferencial {
@@ -697,7 +707,7 @@ body {
     background-position: center;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 790px) {
 	#avaliacao {
 		background-size: contain;
 	}
@@ -752,7 +762,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 796px) {
+@media only screen and (max-width: 790px) {
 	#diferencial p{
 		font-size: 1em;
 	}
