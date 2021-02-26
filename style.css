@@ -20,7 +20,7 @@ html {
 
 body {
     font-family: 'Qanelas-medium';
-	overflow-x: hidden;
+	  overflow-x: hidden;
 }
 
 .medium{
@@ -116,8 +116,8 @@ body {
 
 /*Cor+fundo da fonte quando for selecionada*/
 ::selection {
-  background-color: #630043;
-  color: white;
+    background-color: #630043;
+    color: white;
 }
 
 /*---SLIDE 1---*/
@@ -906,6 +906,164 @@ body {
 
 /* FIM DA JORNADA DO CLIENTE */
 
+/*CARP*/
+.CARP {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  background-color: #ffe6f9;
+}
+
+.CARP-inner {
+  padding: 4% 15%;
+  text-align: center;
+  padding-top: 2%;
+}
+
+#CARP-inner-title {
+  color: #630043;
+  font-size: 150%;
+  font-weight: normal;
+  padding: 30px 1px;
+  font-family: 'Qanelas-medium';
+}
+
+.verde-bold {
+  color: #459437;
+  font-weight: bold;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.CARP-inner-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+  justify-content: space-around;
+  padding: 20px 25px;
+}
+
+.CARP-block {
+  width: 24%;
+  background-color: #d887c3;
+  border-radius: 15px;
+}
+
+.CARP-block:hover {
+  background-color: #85cc79;
+  box-shadow: 0 0 0.8em rgba(0, 0, 0, 0.363);
+}
+
+.CARP-title {
+  color: white;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.CARP-txt {
+  color: #630043;
+  padding: 20px 15px;
+  font-family: 'Qanelas-medium';
+}
+
+@media only screen and (max-width: 1150px){
+  .CARP-inner-blocks {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      padding: 10px;
+  }
+  
+  .CARP-block{
+      width:40%;
+      justify-content: center;
+      margin: 10px;
+  }
+
+  .CARP-txt{
+      font-size: 15px;
+  }
+
+  .CARP-title{
+      font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .CARP-inner-blocks {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      padding: 10px;
+  }
+  
+  .CARP-block{
+      width:40%;
+      justify-content: center;
+      margin: 10px;
+  }
+
+  .CARP-txt{
+      font-size: 13px;
+  }
+
+  .CARP-title{
+      font-size: 15px;;
+  }
+}
+
+@media only screen and (max-width: 570px){
+  .CARP-inner-blocks {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      padding: 1px;
+  }
+  
+  .CARP-block{
+      width:69%;
+      height: 142px;
+      justify-content: center;
+      margin: 5px;
+  }
+
+  .CARP-txt{
+      font-size: 11px;
+  }
+
+  .CARP-title{
+      font-size: 15px;
+  }
+
+  #CARP-inner-title{
+      font-size: 19px;
+  }
+}
+
+@media only screen and (max-width: 320px){
+  
+  .CARP-block{
+      width:75%;
+      height: 138px;
+      justify-content: center;
+      margin: 5px;
+  }
+
+  .CARP-txt{
+      font-size: 10px;
+  }
+
+  .CARP-title{
+      font-size: 12.5px;
+  }
+
+  #CARP-inner-title{
+      font-size: 16px;
+}
+}
+/*FIM CARP*/
 /* INÍCIO "NOSSO DIFERENCIAL" */
 #diferencial {
     text-align: center;
@@ -1050,11 +1208,6 @@ body {
     width: 27%;
     font-weight: bold;
     margin: 30px auto;
-}
-
-.setas-home {
-  width: 100%;
-  margin-top: -49.8%
 }
 
 @media only screen and (max-width: 1105px){
