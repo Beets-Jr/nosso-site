@@ -27,12 +27,19 @@ body {
     font-family: 'Qanelas-medium';
 }
 
-* {
-  box-sizing:border-box;
-  margin: 0;
-  padding: 0;
+
+
+/*Cor+fundo da fonte quando for selecionada com o mouse*/
+::-moz-selection {
+  background-color: #630043;
+  color: white;
 }
 
+/*Cor+fundo da fonte quando for selecionada*/
+::selection {
+    background-color: #630043;
+    color: white;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -163,7 +170,6 @@ body {
   top: 47%;
   padding: 7px;
   font-weight: bold;
-  border: 1px solid red;;
 }
 #slide-subtitulo-2 {
   font-size: 25px;
@@ -194,7 +200,6 @@ body {
   top: 47%;
   padding: 7px;
   font-weight: bold;
-  border: 1px solid rgb(141, 71, 71);
 }
 
 #slide-subtitulo-3 {
