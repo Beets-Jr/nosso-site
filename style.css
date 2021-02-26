@@ -770,6 +770,7 @@ body {
   font-size: 150%;
   font-weight: normal;
   padding: 30px 1px;
+  font-family: 'Qanelas-medium';
 }
 
 .verde-bold {
@@ -809,6 +810,7 @@ body {
 .CARP-txt {
   color: #630043;
   padding: 20px 15px;
+  font-family: 'Qanelas-medium';
 }
 
 @media only screen and (max-width: 1150px){
