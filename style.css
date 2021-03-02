@@ -914,8 +914,7 @@ body {
 /*CARP*/
 .CARP {
   position: relative;
-  padding: 0;
-  margin: 0;
+  margin-top: 2%;
   background-color: #ffe6f9;
 }
 
@@ -1072,6 +1071,7 @@ body {
 /* INÍCIO "NOSSO DIFERENCIAL" */
 #diferencial {
     text-align: center;
+    margin-top: 2%;
 }
 
 #titulo-diferencial {
