@@ -1,8 +1,8 @@
 <?php
 
-require("./sendgrid-php/sendgrid-php.php");
+require("./sendgrid/sendgrid-php.php");
 
-$email_site = "contato@beetsjr.com.br";
+$email_site = "projetos@beetsjr.com.br";
 $nome_site = "Beet Jr.";
 
 $email_user = $_POST["email"];
