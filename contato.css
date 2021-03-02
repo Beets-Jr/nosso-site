@@ -54,11 +54,15 @@ body {
     margin-bottom: 4%;
 }
 
+#formulario-div {
+    display: flex;
+    flex-basis: 50%;
+}
+
 #formulario {
     font-family: Qanelas-bold;
     text-align: right;
     color: #630043;
-    flex-basis: 50%;
 }
 
 .campos-forms {
@@ -81,16 +85,50 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin-top: 10%;
-    /* padding-right: 4%; */
 }
 
-#redes-sociais {
+@media only screen and (max-width: 768px) {
+    #formulario-div {
+        flex-basis: 100%;
+    }
+    
+    #contatos, #endereco {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    #endereco, #outros-contatos {
+        margin-top: 5%;
+    }
+}
+
+#contatos div {
     flex-basis: 100%;
 }
 
 #redes-sociais img {
     width: 10%;
+    height: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+    #redes-sociais img {
+        width: 15%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #redes-sociais img {
+        width: 50px;
+    }
+}
+
+#redes-sociais a {
     margin-right:4%;
+}
+
+#redes-sociais a:last-child {
+    margin: 0;
 }
 
 #outros-contatos {
@@ -103,7 +141,7 @@ body {
 }
 
 #outros-contatos p {
-    margin-top: 6%;
+    margin-top: 2%;
     color: #696969;
 }
 
