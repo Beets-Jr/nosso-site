@@ -1,12 +1,58 @@
+@font-face {
+    font-family: Qanelas-light;
+    src: url(../QanelasSoftUltraLight.otf)
+}
+
+@font-face {
+    font-family: Qanelas-bold;
+    src: url(../QanelasSoftBold.otf)
+}
+
+@font-face {
+    font-family: Qanelas-medium;
+    src: url(../QanelasSoftMedium.otf)
+}
+
+body {
+    font-family: 'Qanelas-medium', Calibri;
+}
+
+/*Cor+fundo da fonte quando for selecionada com o mouse*/
+::-moz-selection {
+    background-color: #630043;
+    color: white;
+}
+  
+/*Cor+fundo da fonte quando for selecionada*/
+::selection {
+    background-color: #630043;
+    color: white;
+}
+
 #CARP {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     text-align: center;
+    margin-bottom: 5%;
 }
 
 #desc-CARP {
     flex-basis: 100%;
+}
+
+#desc-CARP .txt-verde {
+    color: green;
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.desc-item-CARP {
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .item-CARP {
@@ -19,7 +65,7 @@
 }
 
 .item-CARP:hover {
-    /* background-color: #; */
+    background-color: #F6EDF3;
 }
 
 @media only screen and (max-width: 950px) {
@@ -58,4 +104,33 @@
     content: ">";
     color: green;
     font-weight: bolder;
+}
+
+/* INÍCIO JORNADA DO CLIENTE DETALHADA */
+#jornada-cliente-detalhada {
+    text-align: center;
+}
+
+#titulo-jornada-cliente-detalhada {
+    color: #630043;
+    font-size: 2.5em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.traco {
+    background-color: #febdf2;
+  	height: 13px;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    margin-top: -11px;
+}
+
+#subtitulo-jornada-cliente-detalhada {
+    color: #bbb;
+    font-size: 2em;
+    line-height: 80%;
+    margin-bottom: 5%;
 }
