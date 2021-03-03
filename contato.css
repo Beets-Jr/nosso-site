@@ -1,0 +1,150 @@
+@font-face {
+    font-family: Qanelas-light;
+    src: url(../QanelasSoftUltraLight.otf)
+}
+
+@font-face {
+    font-family: Qanelas-bold;
+    src: url(../QanelasSoftBold.otf)
+}
+
+@font-face {
+    font-family: Qanelas-medium;
+    src: url(../QanelasSoftMedium.otf)
+}
+
+body {
+    font-family: 'Qanelas-medium', Calibri;
+}
+
+#fale-conosco {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%; 
+    justify-content: space-around;   
+    margin: 0 auto;
+    font-family: 'Qanelas-medium', Calibri;
+}
+
+#titulo-fale-conosco {
+    background-color: #b872a2;
+    color: #fff;
+    font-size: 1.6em;
+    font-family: 'Qanelas-bold', Calibri;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    margin: 0 auto -30px auto;
+    padding: 0.8% 3%;
+    height: 85%;
+}
+
+#linha-fale-conosco {
+    width: 100%;
+    border: 2px dashed #630343;
+    border-style: none none dashed;
+    margin-bottom: 4%;
+    z-index: -1;
+}
+
+#frase-formulario {
+    flex-basis: 100%;
+    text-align: center;
+    color: #b872a2;
+    margin-bottom: 4%;
+}
+
+#formulario-div {
+    display: flex;
+    flex-basis: 50%;
+}
+
+#formulario {
+    font-family: Qanelas-bold;
+    text-align: right;
+    color: #630043;
+}
+
+.campos-forms {
+    border-radius: 9px;
+    border-color: rgb(138, 128, 128);
+    border-width: 1px;
+    margin: 0 0 5px 10px;
+    padding: 10px 25px;
+    width: 50%;
+    vertical-align: top;
+}
+
+#formulario label {
+    display: inline-block;
+    margin-top: 6px;
+}
+
+#contatos {
+    flex-basis: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10%;
+}
+
+@media only screen and (max-width: 768px) {
+    #formulario-div {
+        flex-basis: 100%;
+    }
+    
+    #contatos, #endereco {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    #endereco, #outros-contatos {
+        margin-top: 5%;
+    }
+}
+
+#contatos div {
+    flex-basis: 100%;
+}
+
+#redes-sociais img {
+    width: 10%;
+    height: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+    #redes-sociais img {
+        width: 15%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #redes-sociais img {
+        width: 50px;
+    }
+}
+
+#redes-sociais a {
+    margin-right:4%;
+}
+
+#redes-sociais a:last-child {
+    margin: 0;
+}
+
+#outros-contatos {
+    color: #696969; /* ou #4F4F4F */
+}
+
+#outros-contatos a {
+    text-decoration: none;
+    color: #696969;
+}
+
+#outros-contatos p {
+    margin-top: 2%;
+    color: #696969;
+}
+
+#endereco {
+    color: #696969;
+}
