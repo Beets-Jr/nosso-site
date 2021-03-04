@@ -5,12 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Beets Jr - Quem Somos</title>
-    <link rel="stylesheet" type="text/css" href="quem-somos.css">
+    
     <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="quem-somos.css">
 </head>
 
 <body>
+    <header class="caixa">
+        <div class="logo">
+            <h1><a href="index.html"><img class="logo" src="img/logos/Logo_BeetsJr_2020_3-2.png" alt="Logo Beets Jr."></a></h1>
+        </div>
+
+        <nav class="menu">
+            <input type="checkbox" id="check">
+            <label class="icone-menu" for="check"><img src="img/hamburger.png"></label><!--icon menu -->
+            <ul class="itens-menu"> 
+                <li class="item-menu"><a href="index.html" class="a-menu">Home</a></li>
+                <li class="item-menu"><a href="quem-somos.html">Quem Somos</a></li>
+                <li class="item-menu"><a href="servicos.html">Serviços</a></li>
+                <li class="item-menu item-menu2"><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>  
+    </header>
 
     <section id="banner">
         <img class="banner-img" alt="Banner com foto de pessoas trabalhando em mesa de escritório" src="img/banner_quem-somos.png">
@@ -20,6 +39,34 @@
         </div>
     </section>
 
-</body>
+    <footer class="box-footer">
+        <div class="div-footer">
+            <img class= "logo-rodape" src="img/logos/Logo_BeetsJr_2020_3-3.png" alt="Logo Beets Jr.">
+        </div>
+        
+        <div class="div-footer">
+            <div class="redes-sociais">
+                <img class="social" src="img/redes sociais/icone_facebook.png" alt="Facebook Beets Jr">
+                <img class="social" src="img/redes sociais/icone_instagram.png" alt="Instagram Beets Jr">
+                <img class="social" src="img/redes sociais/icone_linkedin.png" alt="Linkdin Beets Jr">
+            </div>
 
+            <div class="direitos-autorais">
+                <p class="footer-txt">@2021 Copyright</p>
+                <p class="footer-txt txt-top">Desenvolvido com amor pelos Beeters</p>
+            </div>
+        </div>
+            
+        <div class="div-footer div-footer3">
+            <div class="contatos">
+                <p class="footer-txt">contato@beetsjr.com.br
+                <p class="footer-txt txt-top">(11) 94462-1690</p>
+            </div>
+            
+            <div class="enderecos">
+                <p class="footer-txt txt-end">Rodovia João Leme dos Santos, km 110 - Bairro Itinga, Sorocaba.</p>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
