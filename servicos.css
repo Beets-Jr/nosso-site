@@ -1,44 +1,15 @@
-@font-face {
-    font-family: Qanelas-light;
-    src: url(../QanelasSoftUltraLight.otf)
-}
-
-@font-face {
-    font-family: Qanelas-bold;
-    src: url(../QanelasSoftBold.otf)
-}
-
-@font-face {
-    font-family: Qanelas-medium;
-    src: url(../QanelasSoftMedium.otf)
-}
-
-body {
-    font-family: 'Qanelas-medium', Calibri;
-}
-
-/*Cor+fundo da fonte quando for selecionada com o mouse*/
-::-moz-selection {
-    background-color: #630043;
-    color: white;
-}
-  
-/*Cor+fundo da fonte quando for selecionada*/
-::selection {
-    background-color: #630043;
-    color: white;
-}
-
 #CARP {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     text-align: center;
     margin-bottom: 5%;
+    margin-top: 2%;
 }
 
 #desc-CARP {
     flex-basis: 100%;
+    color: #630043;
 }
 
 #desc-CARP .txt-verde {
@@ -117,6 +88,7 @@ body {
     padding-bottom: 0;
     margin-bottom: 0;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .traco {
