@@ -223,11 +223,11 @@ body {
 @media only screen and (max-width: 550px) {
     
     #banner-titulo {
-        font-size: 27px;
+        font-size: 24px;
         max-width: 70%;
     }
     #banner-subtitulo {
-        font-size: 14px;
+        font-size: 13px;
         max-width: 80%;
         top: 20%;
     }
@@ -236,11 +236,11 @@ body {
 @media only screen and (max-width: 375px) {
     
     #banner-titulo {
-        font-size: 20px;
+        font-size: 18px;
         max-width: 70%;
     }
     #banner-subtitulo {
-        font-size: 10px;
+        font-size: 9px;
         max-width: 80%;
         top: 20%;
     }
