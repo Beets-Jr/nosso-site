@@ -21,6 +21,7 @@ body {
     margin-top: 7%;
     display: flex;
     margin-bottom: 5%;
+    position: relative;
 }
 
 .paragrafos {
@@ -107,4 +108,70 @@ body {
 #formulario label {
     display: inline-block;
     margin-top: 6px;
+}
+
+@media only screen and (max-width: 1250px){
+
+    .img-pitch-mobile{
+        width: 50%;
+        height: auto;
+        left:15%;
+        top:22%;
+        position: absolute;
+    }
+    
+    .pitch-superior{
+        margin-bottom: 25%;
+    }
+    
+    .pitch-inferior{
+        margin-top: 20%;
+    }
+    
+    .desc-pitch{
+        font-size: 1.8em;
+        text-align: center;
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 850px){
+
+    .img-pitch-mobile{
+        top:28%;
+    }
+    
+    
+}
+    
+
+@media only screen and (max-width: 700px){
+
+.img-pitch-mobile{
+    top:25%;
+}
+
+.desc-pitch{
+    font-size: 1.2em;
+}
+}
+
+@media only screen and (max-width: 535px){
+
+    .img-pitch-mobile{
+        top:30%;
+    }
+    
+   
+    .desc-pitch{
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 350px){
+
+    .img-pitch-mobile{
+        top:35%;
+    }
+    
 }
