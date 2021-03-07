@@ -99,6 +99,96 @@
     }
 }
 
+.pitch {
+    margin-top: 7%;
+    display: flex;
+    margin-bottom: 5%;
+    position: relative;
+}
+
+.img-pitch{
+    width: 37%;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 5%;
+    float: left;
+}
+
+.desc-pitch {
+    float: right;
+    vertical-align: top;
+    color: #7f005b;
+    font-size: 1.8em;
+    margin-right: 7%;
+    text-align: right;
+}
+
+.desc-pitch b {
+    color: #b872a2;
+}
+
+.solucoes {
+    color: #3f8532;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1250px){
+
+    .img-pitch-mobile{
+        width: 50%;
+        height: auto;
+        left:15%;
+        top:22%;
+        position: absolute;
+    }
+    
+    .pitch-superior{
+        margin-bottom: 25%;
+    }
+    
+    .pitch-inferior{
+        margin-top: 20%;
+    }
+    
+    .desc-pitch{
+        font-size: 1.8em;
+        text-align: center;
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .img-pitch-mobile {
+        top:28%;
+    } 
+}
+
+@media only screen and (max-width: 700px) {
+    .img-pitch-mobile {
+        top:25%;
+    }
+
+    .desc-pitch {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 535px) {
+    .img-pitch-mobile {
+        top:30%;
+    }
+    
+    .desc-pitch {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .img-pitch-mobile{
+        top:35%;
+    }
+}
+
 /*Filiações*/
 #filiacoes {
     width: 90%;
