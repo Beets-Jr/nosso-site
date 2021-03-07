@@ -1,22 +1,3 @@
-@font-face {
-    font-family: Qanelas-light;
-    src: url(../QanelasSoftUltraLight.otf)
-}
-
-@font-face {
-    font-family: Qanelas-bold;
-    src: url(../QanelasSoftBold.otf)
-}
-
-@font-face {
-    font-family: Qanelas-medium;
-    src: url(../QanelasSoftMedium.otf)
-}
-
-body {
-    font-family: 'Qanelas-medium', Calibri;
-}
-
 /*Banner*/
 #banner {
     width: 100%;
@@ -25,7 +6,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Qanelas-medium', Calibri;
 }
 
 .banner-img {
@@ -116,5 +96,81 @@ body {
         font-size: 10px;
         max-width: 80%;
         top: 20%;
+    }
+}
+
+/*Filiações*/
+#filiacoes {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 6% auto;
+    justify-content: space-evenly;
+}
+
+#titulo-filiacoes {
+    flex-basis: 100%;
+    color: #630043;
+    font-size: 2.3em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-family: 'Qanelas-bold';
+    text-transform: uppercase;
+}
+
+#traco-filiacoes {
+    background-color: #febdf2;
+    height: 13px;
+    border: 0;
+    border-radius: 10px;
+    width: 30%;
+    margin-top: -15px;
+    z-index: -1;
+}
+
+#subtitulo-filiacoes {
+    flex-basis: 100%;
+    color: #BBB;
+    font-size: 1.8em;
+}
+
+.item-filiacao {
+    flex-basis: 20%;
+    width: 20%;
+    border: none;
+    border-radius: 20px;
+    background-color: #DEECDC;
+    padding: 1%;
+    padding-bottom: 2%;
+    margin-top: 2%;
+}
+
+.imagem-item-filiacao {
+    height: 30%;
+    width: 100%;
+    object-fit: contain;
+    padding: 5% 0;
+}
+
+.desc-item-filiacao {
+    color: #3F8532;
+}
+
+@media only screen and (max-width:1024px) {
+    .item-filiacao {
+        flex-basis: 32%;
+    }
+}
+
+@media only screen and (max-width:798px) {
+    .item-filiacao {
+        flex-basis: 55%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .item-filiacao {
+        flex-basis: 80%;
     }
 }

@@ -19,12 +19,16 @@ html {
 }
 
 body {
-    font-family: 'Qanelas-medium';
+    font-family: 'Qanelas-medium', Calibri;
     overflow-x: hidden;
 }
 
 .medium {
     font-family: 'Qanelas-medium';
+}
+
+.font-bold {
+    font-family: 'Qanelas-bold';
 }
 
 /*Cor+fundo da fonte quando for selecionada com o mouse*/
@@ -37,6 +41,10 @@ body {
 ::selection {
     background-color: #630043;
     color: white;
+}
+
+abbr {
+    text-decoration: none;
 }
 
 /*CAIXA DA HEADER*/
@@ -87,6 +95,7 @@ body {
     height: 80px;
     font-size: 18px;
     text-transform: uppercase;
+    text-decoration: none;
     color: #fff;
 }
 
