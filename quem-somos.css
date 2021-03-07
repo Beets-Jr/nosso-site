@@ -174,3 +174,68 @@
         flex-basis: 80%;
     }
 }
+
+/* PREMIAÇÕES */
+#premiacoes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%; 
+    justify-content: space-evenly;   
+    margin: 0 auto;
+    font-family: 'Qanelas-medium', Calibri;    
+}
+
+#titulo-premiacoes {
+    background-color: #630043;
+    color: #fff;
+    font-size: 1.6em;
+    font-family: 'Qanelas-bold', Calibri;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    margin: 0 auto -30px auto;
+    padding: 0.8% 3%;
+    height: 85%;
+    text-transform: uppercase;
+}
+
+#linha-premiacoes {
+    width: 80%;
+    border: 2px dashed #B872A2;
+    border-style: none none dashed;
+    margin-bottom: 4%;
+    z-index: -1;
+}
+
+.premio {
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+}
+
+.imagem-premio {
+    height: 15%;
+    width: auto;
+}
+
+.titulo-premio {
+    color: #630043;
+    font-family: 'Qanelas-bold', Calibri;
+    font-size: 1.5em;
+}
+
+.desc-premio {
+    color: #B872A2;
+    margin-top: 2%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hashtag {
+    color: gray;
+    font-weight: bold;
+    font-size: 2.2em;
+    width: 100%;
+    text-align: center;
+}
