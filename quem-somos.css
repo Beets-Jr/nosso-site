@@ -24,10 +24,6 @@ body {
     position: relative;
 }
 
-.paragrafos {
-    justify-content: flex-wrap;
-}
-
 .img-pitch{
     width: 37%;
     height: auto;
