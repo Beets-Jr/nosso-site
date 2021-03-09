@@ -264,3 +264,87 @@
         flex-basis: 80%;
     }
 }
+
+/* PREMIAÇÕES */
+#premiacoes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%; 
+    justify-content: space-evenly;   
+    margin: 0 auto;
+    font-family: 'Qanelas-medium', Calibri;   
+    align-items: flex-start; 
+}
+
+#titulo-premiacoes {
+    background-color: #630043;
+    color: #fff;
+    font-size: 1.6em;
+    font-family: 'Qanelas-bold', Calibri;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    margin: 0 auto -30px auto;
+    padding: 0.8% 3%;
+    height: 85%;
+    text-transform: uppercase;
+}
+
+#linha-premiacoes {
+    width: 80%;
+    border: 2px dashed #B872A2;
+    border-style: none none dashed;
+    margin-bottom: 4%;
+    z-index: -1;
+}
+
+.premio {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    height: 40%;
+}
+
+.imagem-premio {
+    height: 15%;
+    width: 30%;
+}
+
+@media only screen and (max-width: 768px) {
+    .premio {
+        width: 80%;
+    }
+}
+
+.titulo-premio {
+    color: #630043;
+    font-family: 'Qanelas-bold', Calibri;
+    font-size: 1.5em;
+}
+
+.desc-premio {
+    color: #B872A2;
+    margin-top: 2%;
+    max-width: 70%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 480px) {
+    .imagem-premio {
+        width: 50%;
+    }
+
+    .desc-premio {
+        max-width: 100%;
+    }
+}
+
+#hashtag {
+    color: gray;
+    font-weight: bold;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    margin: 5% 0 5% 0;
+}
