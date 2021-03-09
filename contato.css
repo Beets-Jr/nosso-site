@@ -106,29 +106,52 @@ body {
     flex-basis: 100%;
 }
 
-#redes-sociais img {
-    width: 10%;
-    height: auto;
+.facebook {
+    width: 55px;
+    height: 55px;
+    position: relative;
+    display: inline-block;
+    background: url(img/redes\ sociais/icone_facebook.png) no-repeat;
+    background-size: contain;
+    margin-right: 3%;
+    margin-left: -2%;
 }
 
-@media only screen and (max-width: 1200px) {
-    #redes-sociais img {
-        width: 15%;
-    }
+.facebook:hover {
+    background: url(img/redes\ sociais/icone_facebook_hover.png) no-repeat;
+    cursor: pointer;
+    background-size: contain;
 }
 
-@media only screen and (max-width: 768px) {
-    #redes-sociais img {
-        width: 50px;
-    }
+.instagram {
+    width: 55px;
+    height: 55px;
+    position: relative;
+    display: inline-block;
+    background: url(img/redes\ sociais/icone_instagram.png) no-repeat;
+    background-size: contain;
+    margin-right: 3%;
 }
 
-#redes-sociais a {
-    margin-right:4%;
+.instagram:hover {
+    background: url(img/redes\ sociais/icone_instagram_hover.png) no-repeat;
+    cursor: pointer;
+    background-size: contain;
 }
 
-#redes-sociais a:last-child {
-    margin: 0;
+.linkedin {
+    width: 55px;
+    height: 55px;
+    position: relative;
+    display: inline-block;
+    background: url(img/redes\ sociais/icone_linkedin.png) no-repeat;
+    background-size: contain;
+}
+
+.linkedin:hover {
+    background: url(img/redes\ sociais/icone_linkedin_hover.png) no-repeat;
+    cursor: pointer;
+    background-size: contain;
 }
 
 #outros-contatos {

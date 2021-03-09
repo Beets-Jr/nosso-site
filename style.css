@@ -19,7 +19,7 @@ html {
 }
 
 body {
-    font-family: 'Qanelas-medium';
+    font-family: 'Qanelas-medium', Calibri;
     overflow-x: hidden;
 }
 
@@ -27,7 +27,7 @@ body {
     font-family: 'Qanelas-medium';
 }
 
-.bold {
+.font-bold {
     font-family: 'Qanelas-bold';
 }
 
@@ -41,6 +41,10 @@ body {
 ::selection {
     background-color: #630043;
     color: white;
+}
+
+abbr {
+    text-decoration: none;
 }
 
 /*CAIXA DA HEADER*/
@@ -91,6 +95,7 @@ body {
     height: 80px;
     font-size: 18px;
     text-transform: uppercase;
+    text-decoration: none;
     color: #fff;
 }
 

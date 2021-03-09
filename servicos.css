@@ -111,6 +111,108 @@ b {
     margin-bottom: 5%;
 }
 
+/*Banner*/
+#banner {
+    width: 100%;
+    position: relative;
+  /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Qanelas-medium', Calibri;
+}
+
+.banner-img {
+    position: relative;
+    width: 100%;
+}
+
+/*---BANNER---*/
+
+.banner-txt {
+    text-align: left;
+    position: absolute;
+    left: 35%;
+    top: 40%;
+    transform: translate(-55%, -30%);
+    color: #fff;
+}
+
+
+/* Padrão desktop (mais de 960px) */
+#banner-titulo{
+    text-transform: uppercase;
+    font-size: 60px;
+    max-width: 60%;
+    top: 47%;
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+#banner-subtitulo{
+    font-size: 32px;
+    max-width: 80%;
+}
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+    .banner-txt{
+        top: 40%;
+    }
+
+    #banner-titulo {
+        font-size: 50px;
+        max-width: 60%;
+        top: 45%;
+    }
+    #banner-subtitulo {
+        font-size: 25px;
+        max-width: 80%;
+        top: 40%;
+    }
+}
+
+/* Mobile Tablet (devices and browser) */
+@media only screen and (max-width: 800px) {
+    #banner-titulo{
+        font-size: 40px;
+        max-width: 60%;
+        top: 40%;
+    }
+    #banner-subtitulo {
+        font-size: 20px;
+        max-width: 80%;
+        top: 38%;
+    }
+}
+
+/* Mobile (devices and browser) */
+@media only screen and (max-width: 550px) {
+    
+    #banner-titulo {
+        font-size: 24px;
+        max-width: 70%;
+    }
+    #banner-subtitulo {
+        font-size: 13px;
+        max-width: 80%;
+        top: 20%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    
+    #banner-titulo {
+        font-size: 18px;
+        max-width: 70%;
+    }
+    #banner-subtitulo {
+        font-size: 9px;
+        max-width: 80%;
+        top: 20%;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .traco {
         width: 70%
