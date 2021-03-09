@@ -738,7 +738,6 @@
     clear: both;
 }
 
-/* ajustar tamanho da letra para outros tamanhos de tela (menores) */
 .item-jornada-conteudo h3 {
     margin-top: 0;
     margin-bottom: 5px;
@@ -830,7 +829,10 @@
     color: #3F8532;
 }
 
-#orcamento-jornada {
+/* FIM DA JORNADA DO CLIENTE */
+
+/* --- INCÍCIO BOTÃO JORNADA --- */
+.orcamento-jornada {
     text-align: center;
     background-color: #630043;
     border: none;
@@ -843,7 +845,12 @@
     justify-content: center;
 }  
 
-#frase-orcamento {
+.orcamento-jornada a  {
+    text-decoration: none;
+    color: white;
+}
+
+.frase-orcamento {
     color: #fff;
     display: inline-block;
     margin: 5% 3% 3% 3%;
@@ -851,7 +858,7 @@
     flex-basis: 100%
 }
 
-#btn-jornada {
+.btn-jornada {
     background-color: #B872A2;
     color: white;
     text-decoration: none;
@@ -866,41 +873,46 @@
 }
 
 @media only screen and (max-width: 800px) {
-    #orcamento-jornada {
+    .orcamento-jornada {
         margin-top: 150px;
         width: 50%;
     }
 }    
 
 @media only screen and (max-width: 500px) {
-    #orcamento-jornada {
+    .orcamento-jornada {
         margin-top: 190px;
     }    
 
-    #frase-orcamento {
+    .frase-orcamento {
         font-size: 1.1em;
     }
 
-    #btn-jornada {
+    .btn-jornada {
         font-size: 0.9em;
     }
 }    
 
+@media only screen and (max-width: 768px) {
+    .orcamento-jornada {
+        width: 65%;
+    }
+}
+
 @media only screen and (max-width: 330px) {
-    #orcamento-jornada {
+    .orcamento-jornada {
         margin-top: 220px;
     }            
 }            
 
 @media only screen and (min-width: 1024px) {
-    #orcamento-jornada {
+    .orcamento-jornada {
         margin-top: 1%;
     }     
-}   
+}
+/* --- FIM BOTÃO JORNADA --- */
 
-/* FIM DA JORNADA DO CLIENTE */
-
-/*CARP*/
+/* --- CARP --- */
 .CARP {
     position: relative;
     margin-top: 2%;

@@ -1,47 +1,13 @@
-/* FONTE */
-@font-face {
-    font-family: Qanelas-light;
-    src: url(QanelasSoftUltraLight.otf)
-}
-
-@font-face {
-    font-family: Qanelas-bold;
-    src: url(QanelasSoftBold.otf)
-}
-
-@font-face {
-    font-family: Qanelas-medium;
-    src: url(QanelasSoftMedium.otf)
-}
-
-html {
-    overflow-x: hidden;
-}
-
-body {
-    font-family: 'Qanelas-medium';
-    overflow-x: hidden;
-}
-
-/*Cor+fundo da fonte quando for selecionada com o mouse*/
-::-moz-selection {
-    background-color: #630043;
-    color: white;
-}
-
-/*Cor+fundo da fonte quando for selecionada*/
-::selection {
-    background-color: #630043;
-    color: white;
-}
+b {
+    font-weight: bold; 
+ }
 
 #CARP {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     text-align: center;
-    margin-bottom: 5%;
-    margin-top: 2%;
+    margin: 2% 4% 5% 4%;
 }
 
 #desc-CARP {
@@ -117,6 +83,7 @@ body {
 /* INÍCIO JORNADA DO CLIENTE DETALHADA */
 #jornada-cliente-detalhada {
     text-align: center;
+    margin: 10% 4% 0 4%;
 }
 
 #titulo-jornada-cliente-detalhada {
@@ -133,7 +100,7 @@ body {
   	height: 13px;
     border: 0;
     border-radius: 10px;
-    width: 80%;
+    width: 50%;
     margin-top: -11px;
 }
 
@@ -243,5 +210,210 @@ body {
         font-size: 9px;
         max-width: 80%;
         top: 20%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .traco {
+        width: 70%
+    }
+
+    #titulo-jornada-cliente-detalhada {
+        font-size: 2em;
+    }
+
+    #subtitulo-jornada-cliente-detalhada {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .traco {
+        width: 86%;
+    }
+
+    #titulo-jornada-cliente-detalhada {
+        font-size: 1.8em;
+    }
+
+    #subtitulo-jornada-cliente-detalhada {
+        font-size: 1.3em;
+    }
+}
+
+#jornada-completa {
+    background-image: url("img/servicos/background_jornada.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.item-jornada-imagem {
+    width: 15%;
+    height: auto;
+    display: inline-block;
+    padding: 0 3% 8% 2%;
+}
+
+.item-jornada-conteudo {
+    text-align: left;
+    border: 3px solid #F6EDF3;
+    border-radius: 15px;
+    padding: 1.5%;
+    margin-top: 4%;
+    background-color: white;
+    display: inline-block;
+    width: 60%;
+}
+
+.item-jornada-conteudo:nth-child(odd) {
+    margin-left: -35%;
+    padding-left: 30%;
+}
+
+.item-jornada-conteudo:nth-child(even) {
+    margin-right: -35%;
+    padding-right: 15%;
+}
+
+.item-jornada-conteudo:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.item-jornada-titulo {
+    color: #630043;
+    margin-bottom: 1%;
+    font-weight: 1000;
+    font-size: 1.6em;
+}
+
+.item-jornada-paragrafo {
+    color: #B872A2;
+    margin-bottom: 2%;
+    font-size: 1.1em;
+}
+
+@media only screen and (max-width: 1024px) {
+    .item-jornada-conteudo {
+        width: 95%;
+    }
+
+    .item-jornada-conteudo > * {
+        padding: 0 2%;
+    }
+
+    .item-jornada {
+        position: relative;
+    }
+
+    .item-jornada-imagem {
+        position: absolute;
+        top: 50%;
+        left: 80%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .item-jornada-imagem {
+        width: 18%
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .item-jornada-imagem {
+        width: 20%
+    }
+
+    .item-jornada-conteudo:nth-child(odd) {
+        margin-left: -25%;
+        padding-left: 20%;
+    }
+    
+    .item-jornada-conteudo:nth-child(even) {
+        margin-right: -25%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .item-jornada-imagem {
+        opacity: 0;
+    }
+} 
+
+.item-jornada-paragrafo:nth-child(even) {
+    padding-right: 15%;
+}
+ 
+.item-jornada-lista li {
+    color: #630043;
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+.item-jornada-lista li:before {
+    content: "> ";
+    color: green;
+    font-weight: bolder;
+}
+
+.orcamento-jornada {
+    text-align: center;
+    background-color: #630043;
+    border: none;
+    border-radius: 20px;
+    width: 40%;
+    margin: 10% auto 4% auto;
+    padding: 0 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}  
+
+@media only screen and (min-width: 1024px) {
+    .orcamento-jornada {
+        margin-top: 3%;
+    }
+}
+
+.orcamento-jornada a  {
+    text-decoration: none;
+    color: white;
+}
+
+.frase-orcamento {
+    color: #fff;
+    display: inline-block;
+    margin: 5% 3% 3% 3%;
+    font-size: 1.3em;
+    flex-basis: 100%
+}
+
+.btn-jornada {
+    background-color: #B872A2;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 2%;
+    font-size: 1em;
+    display: block;
+    width: auto;
+    margin-bottom: 5%;
+}
+
+@media only screen and (max-width: 500px) {
+    .frase-orcamento {
+        font-size: 1.1em;
+    }
+
+    .btn-jornada {
+        font-size: 0.9em;
+    }
+}   
+
+@media only screen and (max-width: 768px) {
+    .orcamento-jornada {
+        width: 65%;
     }
 }
