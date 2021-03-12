@@ -1,20 +1,5 @@
-@font-face {
-    font-family: Qanelas-light;
-    src: url(../QanelasSoftUltraLight.otf)
-}
-
-@font-face {
-    font-family: Qanelas-bold;
-    src: url(../QanelasSoftBold.otf)
-}
-
-@font-face {
-    font-family: Qanelas-medium;
-    src: url(../QanelasSoftMedium.otf)
-}
-
-body {
-    font-family: 'Qanelas-medium', Calibri;
+b {
+    font-weight: 900;
 }
 
 #fale-conosco {
@@ -50,10 +35,11 @@ body {
 #frase-formulario {
     flex-basis: 100%;
     text-align: center;
-    color: #b872a2;
+    color: #630043;
     margin-bottom: 4%;
 }
 
+/* INÍCIO FORMULÁRIO */
 #formulario-div {
     display: flex;
     flex-basis: 50%;
@@ -75,11 +61,30 @@ body {
     vertical-align: top;
 }
 
+#msg {
+    resize: none;
+}
+
+.btn-enviar {
+    display: block;
+    background-color: #3f8532;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1em;
+    width: 15%;
+    height: 8%;
+    margin: 5% auto;
+}
+
 #formulario label {
     display: inline-block;
     margin-top: 6px;
 }
+/* FIM FORMULÁRIO */
 
+/* INÍCIO CONTATOS (redes sociais, endereço...) */
 #contatos {
     flex-basis: 40%;
     display: flex;
@@ -171,3 +176,4 @@ body {
 #endereco {
     color: #696969;
 }
+/* FIM CONTATOS (email, telefone...) */
