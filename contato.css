@@ -40,11 +40,15 @@ b {
 }
 
 /* INÍCIO FORMULÁRIO */
+#formulario-div {
+    display: flex;
+    flex-basis: 50%;
+}
+
 #formulario {
     font-family: Qanelas-bold;
     text-align: right;
     color: #630043;
-    flex-basis: 50%;
 }
 
 .campos-forms {
@@ -86,16 +90,73 @@ b {
     display: flex;
     flex-wrap: wrap;
     margin-top: 10%;
-    /* padding-right: 4%; */
 }
 
-#redes-sociais {
+@media only screen and (max-width: 768px) {
+    #formulario-div {
+        flex-basis: 100%;
+    }
+    
+    #contatos, #endereco {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    #endereco, #outros-contatos {
+        margin-top: 5%;
+    }
+}
+
+#contatos div {
     flex-basis: 100%;
 }
 
-#redes-sociais img {
-    width: 10%;
-    margin-right:4%;
+.facebook {
+    width: 55px;
+    height: 55px;
+    position: relative;
+    display: inline-block;
+    background: url(img/redes\ sociais/icone_facebook.png) no-repeat;
+    background-size: contain;
+    margin-right: 3%;
+    margin-left: -2%;
+}
+
+.facebook:hover {
+    background: url(img/redes\ sociais/icone_facebook_hover.png) no-repeat;
+    cursor: pointer;
+    background-size: contain;
+}
+
+.instagram {
+    width: 55px;
+    height: 55px;
+    position: relative;
+    display: inline-block;
+    background: url(img/redes\ sociais/icone_instagram.png) no-repeat;
+    background-size: contain;
+    margin-right: 3%;
+}
+
+.instagram:hover {
+    background: url(img/redes\ sociais/icone_instagram_hover.png) no-repeat;
+    cursor: pointer;
+    background-size: contain;
+}
+
+.linkedin {
+    width: 55px;
+    height: 55px;
+    position: relative;
+    display: inline-block;
+    background: url(img/redes\ sociais/icone_linkedin.png) no-repeat;
+    background-size: contain;
+}
+
+.linkedin:hover {
+    background: url(img/redes\ sociais/icone_linkedin_hover.png) no-repeat;
+    cursor: pointer;
+    background-size: contain;
 }
 
 #outros-contatos {
@@ -108,7 +169,7 @@ b {
 }
 
 #outros-contatos p {
-    margin-top: 6%;
+    margin-top: 2%;
     color: #696969;
 }
 
