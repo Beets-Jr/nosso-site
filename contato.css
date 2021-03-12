@@ -1,22 +1,3 @@
-@font-face {
-    font-family: Qanelas-light;
-    src: url(../QanelasSoftUltraLight.otf)
-}
-
-@font-face {
-    font-family: Qanelas-bold;
-    src: url(../QanelasSoftBold.otf)
-}
-
-@font-face {
-    font-family: Qanelas-medium;
-    src: url(../QanelasSoftMedium.otf)
-}
-
-body {
-    font-family: 'Qanelas-medium', Calibri;
-}
-
 b {
     font-weight: 900;
 }
