@@ -1,0 +1,26 @@
+$('.brand-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    autoplay:true,
+    responsive:{
+      0:{
+        items:2
+      },
+      450:{
+        items:3
+      },
+      800:{
+        items:4
+      },
+      1100:{
+        items:5
+      },
+      1250:{
+        items:6
+      },
+      1900:{
+        items:7
+      }
+    }
+  }) 
+  

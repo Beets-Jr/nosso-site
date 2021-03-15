@@ -8,6 +8,8 @@
 
     <title>Beets Jr - Quem Somos</title>
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"> 
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="quem-somos.css">
@@ -47,10 +49,70 @@
         </div>
     </section>
 
-    <section id="filiacoes">
-        <h3 id="titulo-filiacoes">Filiação</h3>
-        <hr id="traco-filiacoes">
-        <h4 id="subtitulo-filiacoes">rede de apoio</h4>
+    <section class="secao-fotos-membros">
+        <h3 class="titulo-secao">Nossa Equipe</h3>
+        <hr class="traco-secao">
+        <h4 class="subtitulo-secao">conheça os Beeters</h4>
+        <p class="descricao-fotos-membros">
+            Somos jovens estudantes que buscam aperfeiçoar seus conhecimentos em linguagens de programação e metodologias ágeis para entregar as melhores soluções com as tecnologias mais inovadoras e eficientes do mercado.
+        </p>
+        <div class="brand-carousel section-padding owl-carousel">
+            <div class="single-logo">
+            <a href="https://www.linkedin.com/in/arthur-bravo/" target=_blank><img src="img/quem somos/foto_Arthur.png" alt="Membro da Beets Jr: Arthur Ribeiro"></a>
+            <p class="nome-membro">Arthur Ribeiro</p>
+            <p class="cargo-membro">Diretor de RH</p>
+            <p><a class="linkedin-membro" href="https://www.linkedin.com/in/arthur-bravo/" target=_blank>LinkedIn</a></p>
+            </div>
+
+            <div class="single-logo">
+            <a href="https://www.linkedin.com/in/daniel-silva-a86a92187/" target=_blank><img src="img/quem somos/foto_Fit.png" alt="Membro da Beets Jr: Daniel Silva"></a>        
+            <p class="nome-membro">Daniel Silva</p>
+            <p class="cargo-membro">Diretor Comercial</p>
+            <p><a class="linkedin-membro" href="https://www.linkedin.com/in/daniel-silva-a86a92187/" target=_blank>LinkedIn</a></p>
+            </div>
+
+            <div class="single-logo">
+            <a href="https://www.linkedin.com/in/nataliascarvalho" target=_blank><img src="img/quem somos/foto_Faust.png" alt=" Membro da Beets Jr: Natália Carvalho"></a>         
+            <p class="nome-membro">Natália Carvalho</p>
+            <p class="cargo-membro">Vice Presidenta</p>
+            <p><a class="linkedin-membro" href="https://www.linkedin.com/in/nataliascarvalho" target=_blank>LinkedIn</a></p>
+            </div>
+
+            <div class="single-logo">
+            <a href="https://www.linkedin.com/in/nathaliekomatsu/" target=_blank><img src="img/quem somos/foto_Nathalie.png" alt="Membro da Beets Jr: Nathalie Komatsu"></a>
+            <p class="nome-membro">Nathalie Komatsu</p>
+            <p class="cargo-membro">Diretora de Marketing</p>
+            <p><a class="linkedin-membro" href="https://www.linkedin.com/in/nathaliekomatsu/" target=_blank>LinkedIn</a></p>
+            </div>
+
+            <div class="single-logo">
+            <a href="https://www.linkedin.com/in/gkyomen/" target=_blank><img src="img/quem somos/foto_Gabriel.png" alt="Membro da Beets Jr: Gabriel Kyomen"></a>
+            <p class="nome-membro">Gabriel Kyomen</p>
+            <p class="cargo-membro">Diretor de Projetos</p>
+            <p><a class="linkedin-membro" href="https://www.linkedin.com/in/gkyomen/" target=_blank>LinkedIn</a></p>
+            </div>
+
+            <div class="single-logo">
+            <a href="https://www.linkedin.com/in/crismerlyn-paiva/" target=_blank><img src="img/quem somos/foto_Samba.png" alt="Membro da Beets Jr: Cris Paiva"></a>
+            <p class="nome-membro">Cris Paiva</p>
+            <p class="cargo-membro">Presidenta</p>
+            <p><a class="linkedin-membro" href="https://www.linkedin.com/in/crismerlyn-paiva/" target=_blank>LinkedIn</a></p>
+            </div>
+        
+            <div class="single-logo">
+            <a class="linkedin-membro" href="https://www.linkedin.com/in/matheus-volpon-2612a2188/" target=_blank><img src="img/quem somos/foto_Matheus.png" alt="Membro da Beets Jr: Matheus Volpon"></a>
+            <p class="nome-membro">Matheus Volpon</p>
+            <p class="cargo-membro">Diretor Adm-Financeiro</p>
+            <p><a class="linkedin-membro" href="https://www.linkedin.com/in/matheus-volpon-2612a2188/" target=_blank>LinkedIn</a></p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="filiacoes">
+        <h3 class="titulo-secao">Filiação</h3>
+        <hr class="traco-secao">
+        <h4 class="subtitulo-secao">rede de apoio</h4>
         <div class="item-filiacao">
             <img class="imagem-item-filiacao" src="img/quem somos/logo-ufscar.png" alt="Logotipo da Universidade Federal de São Carlos">
             <p class="desc-item-filiacao">Somos orientados por doutores da Universidade Federal de São Carlos, uma das 15 melhores universidades da América Latina, recebendo apoio de profissionais com larga experiência na área</p>
@@ -114,5 +176,11 @@
             </div>
         </div>
     </footer>
+
+    <!-- script's da seção rotativa -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/banner.js"></script>
 </body>
 </html>
