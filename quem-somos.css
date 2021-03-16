@@ -99,6 +99,7 @@
     }
 }
 
+/* PITCH */
 .pitch {
     margin-top: 7%;
     display: flex;
@@ -189,7 +190,264 @@
     }
 }
 
-/*Seção Rotativa dos Membros*/
+/* MVV */
+#traco-mvv {
+    background-color: #B872A2;
+  	height: 13px;
+    border: 0;
+    border-radius: 10px;
+    width: 85%;
+    margin: 3% auto;
+}
+
+#mvv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#missao {
+    width: 35%;
+}
+
+#visao {
+    width: 35%;
+}
+
+#valores {
+    width: 50%;
+}
+
+.titulo-item-mvv {
+    color: #630042;
+    text-align: center;
+    font-size: 2.2em;
+    text-transform: uppercase;
+}
+
+.subtitulo-item-mvv {
+    color: #bbb;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.desc-mvv {
+    color: white;
+    position: absolute;
+    line-height: 1.3;
+}
+
+#div-missao {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+#div-missao .desc-mvv {
+    top: 20%;
+    left: 15%;
+    right: 30%;
+}
+
+#div-visao {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+#div-visao .desc-mvv {
+    top: 25%;
+    left: 38%;
+    right: 20%;
+    text-align: right;
+}
+
+#div-valores {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+#div-valores .desc-mvv {
+    top: 35%;
+    left: 20%;
+    right: 30%;
+}
+
+.lista-mvv {
+    list-style-type: disc;
+}
+
+.imagem-mvv-missao {
+    width: 100%;
+}
+
+.imagem-mvv-visao {
+    width: 100%;
+}
+
+.imagem-mvv-valores {
+    width: 100%;
+    margin-top: -8%;
+}
+
+.imagem-mvv-missao-mobile, .imagem-mvv-visao-mobile, .imagem-mvv-valores-mobile {
+    opacity: 0;
+    height: 0;
+}
+
+@media only screen and (max-width: 1199px) {
+    .desc-mvv {
+        font-size: 0.9em;
+    }
+
+    #div-valores .desc-mvv {
+        top: 30%;
+    }
+} 
+
+@media only screen and (max-width: 1024px) {
+    #div-missao .desc-mvv {
+        top: 15%;
+    }
+
+    #div-visao .desc-mvv {
+        top: 15%;
+    }
+
+    #div-valores .desc-mvv {
+        top: 28%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .desc-mvv {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #mvv {
+        margin-top: 3%;
+    }
+
+    .titulo-item-mvv {
+        font-size: 2.8em;
+        margin-top: 5%;
+    }
+
+    .subtitulo-item-mvv {
+        font-size: 2em;
+    }
+
+    #missao, #visao, #valores {
+        width: 100%;
+        text-align: center;
+    }
+
+    .desc-mvv {
+        font-size: 1em;
+    }
+
+    #div-missao .desc-mvv {
+        text-align: center;
+        top: 20%;
+        left: 30%;
+    }
+
+    #div-visao .desc-mvv {
+        text-align: center;
+        top: 30%;
+        right: 30%;
+        left: 30%;
+    }
+
+    #div-valores .desc-mvv {
+        text-align: left;
+        top: 24%;
+        left: 38%;
+    }
+
+    .imagem-mvv-missao, .imagem-mvv-visao, .imagem-mvv-valores {
+        opacity: 0;
+        height: 0;
+    }
+
+    .imagem-mvv-missao-mobile, .imagem-mvv-visao-mobile, .imagem-mvv-valores-mobile {
+        opacity: 1;
+        width: 70%;
+        height: auto;
+        margin-top: -5%;
+    }
+
+    .imagem-mvv-valores-mobile {
+        margin-top: -1%;
+    }
+} 
+
+@media only screen and (max-width: 585px) {
+    .titulo-item-mvv {
+        font-size: 2.5em;
+    }
+
+    .subtitulo-item-mvv {
+        font-size: 1.6em;
+    }
+
+    #div-missao .desc-mvv {
+        top: 20%;
+        left: 20%;
+        right: 20%;
+    }
+
+    #div-visao .desc-mvv {
+        top: 30%;
+        right: 20%;
+        left: 20%;
+    }
+
+    #div-valores .desc-mvv {
+        top: 22%;
+        left: 25%;
+        right: 20%;
+    }
+  
+    .imagem-mvv-missao-mobile, .imagem-mvv-visao-mobile, .imagem-mvv-valores-mobile {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .titulo-item-mvv {
+        font-size: 2em;
+    }
+
+    .subtitulo-item-mvv {
+        font-size: 1.2em;
+    }
+
+    .desc-mvv {
+        font-size: 0.8em;
+    }
+
+    #div-valores .desc-mvv {
+        top: 25%;
+        font-size: 0.7em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .desc-mvv {
+        font-size: 1.1em;
+    }
+
+    #div-valores .desc-mvv {
+        top: 30%;
+        left: 20%;
+    }
+} 
+
+/* Seção Rotativa dos Membros */
 .secao-fotos-membros {
     width: 100%;
     display: flex;
@@ -290,7 +548,7 @@
     }
 }
 
-/*Filiações*/
+/* FILIAÇÕES */
 .filiacoes {
     width: 90%;
     display: flex;
