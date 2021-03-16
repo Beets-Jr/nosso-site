@@ -159,13 +159,13 @@
 
 @media only screen and (max-width: 850px) {
     .img-pitch-mobile {
-        top:28%;
+        top:20%;
     } 
 }
 
 @media only screen and (max-width: 700px) {
     .img-pitch-mobile {
-        top:25%;
+        top:23%;
     }
 
     .desc-pitch {
@@ -173,9 +173,9 @@
     }
 }
 
-@media only screen and (max-width: 535px) {
+@media only screen and (max-width: 550px) {
     .img-pitch-mobile {
-        top:30%;
+        top:21%;
     }
     
     .desc-pitch {
@@ -185,12 +185,113 @@
 
 @media only screen and (max-width: 350px) {
     .img-pitch-mobile{
-        top:35%;
+        top:25%;
+    }
+}
+
+/*Seção Rotativa dos Membros*/
+.secao-fotos-membros {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 6% auto;
+    justify-content: space-evenly;
+}
+
+.descricao-fotos-membros{
+    width: 90%;
+    height: auto;
+    text-align: center;
+    color: #7f005b;
+    font-size: 1.6em;
+    margin: 30px auto;
+}
+
+.section-padding{
+    padding:50px 0px 20px;
+}
+
+.brand-carousel {
+    margin-top: 10px;
+    background-color: #e2e1e1;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 4%;
+}
+    
+.owl-dot {
+    display: inline-block;
+    height: 15px !important;
+    width: 15px !important;
+    background-color: #878787 !important;
+    opacity: 0.8;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+    
+.owl-dot.active {
+    background-color: #000 !important;
+}
+
+.owl-carousel .owl-item img{
+    width: 130px;
+    height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.owl-carousel p{
+    text-align: center;
+}
+
+.nome-membro{
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #630043;
+    font-weight: bold;
+}
+
+.cargo-membro{
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #B872A2;
+}
+
+.linkedin-membro {        
+    text-decoration: none;
+    font-size: 1em;
+    margin-top: 10px;
+    color: #944A7C;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 800px){
+    .owl-carousel .owl-item img{
+        width: 180px;
+        height: 180px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .descricao-fotos-membros {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .descricao-fotos-membros {
+        font-size: 1em;
     }
 }
 
 /*Filiações*/
-#filiacoes {
+.filiacoes {
     width: 90%;
     display: flex;
     flex-wrap: wrap;
@@ -199,7 +300,7 @@
     justify-content: space-evenly;
 }
 
-#titulo-filiacoes {
+.titulo-secao {
     flex-basis: 100%;
     color: #630043;
     font-size: 2.3em;
@@ -209,7 +310,7 @@
     text-transform: uppercase;
 }
 
-#traco-filiacoes {
+.traco-secao {
     background-color: #febdf2;
     height: 13px;
     border: 0;
@@ -219,7 +320,7 @@
     z-index: -1;
 }
 
-#subtitulo-filiacoes {
+.subtitulo-secao {
     flex-basis: 100%;
     color: #BBB;
     font-size: 1.8em;
