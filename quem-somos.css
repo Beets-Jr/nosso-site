@@ -99,6 +99,97 @@
     }
 }
 
+/* PITCH */
+.pitch {
+    margin-top: 7%;
+    display: flex;
+    margin-bottom: 5%;
+    position: relative;
+}
+
+.img-pitch{
+    width: 37%;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 5%;
+    float: left;
+}
+
+.desc-pitch {
+    float: right;
+    vertical-align: top;
+    color: #7f005b;
+    font-size: 1.8em;
+    margin-right: 7%;
+    text-align: right;
+}
+
+.desc-pitch b {
+    color: #b872a2;
+}
+
+.solucoes {
+    color: #3f8532;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1250px){
+
+    .img-pitch-mobile{
+        width: 50%;
+        height: auto;
+        left:15%;
+        top:22%;
+        position: absolute;
+    }
+    
+    .pitch-superior{
+        margin-bottom: 25%;
+    }
+    
+    .pitch-inferior{
+        margin-top: 20%;
+    }
+    
+    .desc-pitch{
+        font-size: 1.8em;
+        text-align: center;
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .img-pitch-mobile {
+        top:20%;
+    } 
+}
+
+@media only screen and (max-width: 700px) {
+    .img-pitch-mobile {
+        top:23%;
+    }
+
+    .desc-pitch {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .img-pitch-mobile {
+        top:21%;
+    }
+    
+    .desc-pitch {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .img-pitch-mobile{
+        top:25%;
+    }
+}
+
 /* MVV */
 #traco-mvv {
     background-color: #B872A2;
@@ -320,7 +411,7 @@
         left: 25%;
         right: 20%;
     }
-
+  
     .imagem-mvv-missao-mobile, .imagem-mvv-visao-mobile, .imagem-mvv-valores-mobile {
         width: 80%;
     }
@@ -355,3 +446,264 @@
         left: 20%;
     }
 } 
+
+/* Seção Rotativa dos Membros */
+.secao-fotos-membros {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 6% auto;
+    justify-content: space-evenly;
+}
+
+.descricao-fotos-membros{
+    width: 90%;
+    height: auto;
+    text-align: center;
+    color: #7f005b;
+    font-size: 1.6em;
+    margin: 30px auto;
+}
+
+.section-padding{
+    padding:50px 0px 20px;
+}
+
+.brand-carousel {
+    margin-top: 10px;
+    background-color: #e2e1e1;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 4%;
+}
+    
+.owl-dot {
+    display: inline-block;
+    height: 15px !important;
+    width: 15px !important;
+    background-color: #878787 !important;
+    opacity: 0.8;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+    
+.owl-dot.active {
+    background-color: #000 !important;
+}
+
+.owl-carousel .owl-item img{
+    width: 130px;
+    height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.owl-carousel p{
+    text-align: center;
+}
+
+.nome-membro{
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #630043;
+    font-weight: bold;
+}
+
+.cargo-membro{
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #B872A2;
+}
+
+.linkedin-membro {        
+    text-decoration: none;
+    font-size: 1em;
+    margin-top: 10px;
+    color: #944A7C;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 800px){
+    .owl-carousel .owl-item img{
+        width: 180px;
+        height: 180px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .descricao-fotos-membros {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .descricao-fotos-membros {
+        font-size: 1em;
+    }
+}
+
+/* FILIAÇÕES */
+.filiacoes {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 6% auto;
+    justify-content: space-evenly;
+}
+
+.titulo-secao {
+    flex-basis: 100%;
+    color: #630043;
+    font-size: 2.3em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-family: 'Qanelas-bold';
+    text-transform: uppercase;
+}
+
+.traco-secao {
+    background-color: #febdf2;
+    height: 13px;
+    border: 0;
+    border-radius: 10px;
+    width: 30%;
+    margin-top: -15px;
+    z-index: -1;
+}
+
+.subtitulo-secao {
+    flex-basis: 100%;
+    color: #BBB;
+    font-size: 1.8em;
+}
+
+.item-filiacao {
+    flex-basis: 20%;
+    width: 20%;
+    border: none;
+    border-radius: 20px;
+    background-color: #DEECDC;
+    padding: 1%;
+    padding-bottom: 2%;
+    margin-top: 2%;
+}
+
+.imagem-item-filiacao {
+    height: 30%;
+    width: 100%;
+    object-fit: contain;
+    padding: 5% 0;
+}
+
+.desc-item-filiacao {
+    color: #3F8532;
+}
+
+@media only screen and (max-width:1024px) {
+    .item-filiacao {
+        flex-basis: 32%;
+    }
+}
+
+@media only screen and (max-width:798px) {
+    .item-filiacao {
+        flex-basis: 55%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .item-filiacao {
+        flex-basis: 80%;
+    }
+}
+
+/* PREMIAÇÕES */
+#premiacoes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%; 
+    justify-content: space-evenly;   
+    margin: 0 auto;
+    font-family: 'Qanelas-medium', Calibri;   
+    align-items: flex-start; 
+}
+
+#titulo-premiacoes {
+    background-color: #630043;
+    color: #fff;
+    font-size: 1.6em;
+    font-family: 'Qanelas-bold', Calibri;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    margin: 0 auto -30px auto;
+    padding: 0.8% 3%;
+    height: 85%;
+    text-transform: uppercase;
+}
+
+#linha-premiacoes {
+    width: 80%;
+    border: 2px dashed #B872A2;
+    border-style: none none dashed;
+    margin-bottom: 4%;
+    z-index: -1;
+}
+
+.premio {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    height: 40%;
+}
+
+.imagem-premio {
+    height: 15%;
+    width: 30%;
+}
+
+@media only screen and (max-width: 768px) {
+    .premio {
+        width: 80%;
+    }
+}
+
+.titulo-premio {
+    color: #630043;
+    font-family: 'Qanelas-bold', Calibri;
+    font-size: 1.5em;
+}
+
+.desc-premio {
+    color: #B872A2;
+    margin-top: 2%;
+    max-width: 70%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 480px) {
+    .imagem-premio {
+        width: 50%;
+    }
+
+    .desc-premio {
+        max-width: 100%;
+    }
+}
+
+#hashtag {
+    color: gray;
+    font-weight: bold;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    margin: 5% 0 5% 0;
+}

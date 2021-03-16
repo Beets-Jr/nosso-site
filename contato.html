@@ -5,32 +5,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Beets Jr.</title>
 
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="contato.css">
 </head>
 
 <body>
-    <section id="fale-conosco">
+    <header class="caixa">
+        <div class="logo">
+            <h1><a href="index.html"><img class="logo" src="img/logos/Logo_BeetsJr_2020_3-2.png" alt="Logo Beets Jr."></a></h1>
+        </div>
 
-        <h3 id="titulo-fale-conosco">Fale conosco!</h3>
+        <nav class="menu">
+            <input type="checkbox" id="check">
+            <label class="icone-menu" for="check"><img src="img/hamburger.png"></label><!--icon menu -->
+            <ul class="itens-menu"> 
+                <li class="item-menu"><a href="index.html" class="a-menu">Home</a></li>
+                <li class="item-menu"><a href="quem-somos.html">Quem Somos</a></li>
+                <li class="item-menu"><a href="servicos.html">Serviços</a></li>
+                <li class="item-menu item-menu2"><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>  
+    </header>
+
+    <section id="fale-conosco">
+        <h3 id="titulo-fale-conosco">FALE CONOSCO!</h3>
         <hr id="linha-fale-conosco">
         <p id="frase-formulario">Preencha o <b>formulário</b> abaixo para solicitar um orçamento, tirar dúvidas, enviar elogios ou solicitar uma parceria!</p>
 
-        <form id="formulario" action="post">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" class="campos-forms" required><br>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" class="campos-forms" required placeholder="nome@dominio.com"><br>
-            <label for="tel">Telefone:</label>
-            <input type="tel" id="tel" class="campos-forms" required placeholder="(xx) 00000-0000" pattern="[(][0-9]{2}[)] [0-9]{5|4}-[0-9]{4}" ><br>
-            <label for="msg">Mensagem:</label>
-            <textarea cols="40" rows="10" id="msg" class="campos-forms" required></textarea>
+        <div id="formulario-div">
+            <form id="formulario" class="formphp" action="https://formspree.io/f/xvoveqwp" method="POST">
+                <input type="hidden" name="_language" value="pt-BR"/>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" class="campos-forms" required><br>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" class="campos-forms" required placeholder="nome@dominio.com"><br>
+                <label for="tel">Telefone:</label>
+                <input type="tel" id="tel" name="tel" class="campos-forms" required pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}" placeholder="(xx) 00000-0000"><br>
+                <label for="msg">Mensagem:</label>
+                <textarea cols="40" rows="10" id="msg" name="msg" class="campos-forms" required></textarea>
+                <button type="submit" id="enviar" name="enviar" class="btn-enviar">Enviar</button>
+            </form>
+        </div>
 
-            <!-- botão de envio do forms -->
-        </form>
-
+        <section id="contatos">
+            <div id="redes-sociais">
+                <div class="facebook" onclick="window.open('https://www.facebook.com/beetsjr', '_blank')" title="Logotipo do Facebook em fundo roxo"></div>
+                <div class="instagram" onclick="window.open('https://www.instagram.com/beetsjr/', '_blank')" title="Logotipo do Instagram em fundo roxo"></div>
+                <div class="linkedin" onclick="window.open('https://www.linkedin.com/company/beets-jr/', '_blank')" title="Logotipo do Linkedin em fundo roxo"></div>
+            </div>
+            <div id="outros-contatos">
+                <a href="mailto:contato@beetsjr.com.br">contato@beets.com.br</a>
+                <p>(11) 94462-1690</p>
+            </div>
+            <p id="endereco">Rodovia João Leme dos Santos, km 110 - Bairro Itinga, Sorocaba.</p>
+        </section>
     </section>
+
+    <footer class="box-footer">
+        <div class="div-footer">
+            <img class= "logo-rodape" src="img/logos/Logo_BeetsJr_2020_3-3.png" alt="Logo Beets Jr.">
+        </div>
+        
+        <div class="div-footer">
+            <div class="redes-sociais">
+                <img class="social" src="img/redes sociais/icone_facebook.png" alt="Facebook Beets Jr">
+                <img class="social" src="img/redes sociais/icone_instagram.png" alt="Instagram Beets Jr">
+                <img class="social" src="img/redes sociais/icone_linkedin.png" alt="Linkdin Beets Jr">
+            </div>
+
+            <div class="direitos-autorais">
+                <p class="footer-txt">@2021 Copyright</p>
+                <p class="footer-txt txt-top">Desenvolvido com amor pelos Beeters</p>
+            </div>
+        </div>
+            
+        <div class="div-footer div-footer3">
+            <div class="contatos">
+                <p class="footer-txt">contato@beetsjr.com.br
+                <p class="footer-txt txt-top">(11) 94462-1690</p>
+            </div>
+            
+            <div class="enderecos">
+                <p class="footer-txt txt-end">Rodovia João Leme dos Santos, km 110 - Bairro Itinga, Sorocaba.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -5,14 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beets Jr - Quem Somos</title>
+
+    <title>Beets Jr - Quem Somos</title>  
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"> 
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="quem-somos.css">
-    
 </head>
 
 <body>
+    <header class="caixa">
+        <div class="logo">
+            <h1><a href="index.html"><img class="logo" src="img/logos/Logo_BeetsJr_2020_3-2.png" alt="Logo Beets Jr."></a></h1>
+        </div>
+
+        <nav class="menu">
+            <input type="checkbox" id="check">
+            <label class="icone-menu" for="check"><img src="img/hamburger.png"></label><!--icon menu -->
+            <ul class="itens-menu"> 
+                <li class="item-menu"><a href="index.html" class="a-menu">Home</a></li>
+                <li class="item-menu"><a href="quem-somos.html">Quem Somos</a></li>
+                <li class="item-menu"><a href="servicos.html">Serviços</a></li>
+                <li class="item-menu item-menu2"><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>  
+    </header>
 
     <section id="banner">
         <img class="banner-img" alt="Banner com foto de pessoas trabalhando em mesa de escritório" src="img/banner_quem-somos.png">
@@ -21,7 +40,15 @@
             <p class="medium" id="banner-subtitulo">Conheça a Beets Jr.</p>
         </div>
     </section>
-
+  
+    <section class="pitch">
+        <img class="img-pitch img-pitch-mobile" src="img/vetor_quem_somos.png" alt="4 pessoas em volta de uma mesa, 1 em pé com um caderno na mão, 1 sentada com o caderno na mão, outra em pé apontando para uma lâmpada e outra sentada">
+        <div class="paragrafos">
+            <p class="desc-pitch pitch-superior">A <b>Beets Júnior</b> é uma Empresa Júnior formada por alunos graduandos em Ciência da Computação na Universidade Federal de São Carlos - Campus Sorocaba.</p>
+            <p class="desc-pitch pitch-inferior">Buscamos levar <a class="solucoes">soluções</a> ao mercado de trabalho utilizando tecnologias e metodologias inovadoras para resolver problemas reais por meio computacionais.</p>
+        </div>
+    </section>
+  
     <hr id="traco-mvv">
 
     <section id="mvv">
@@ -63,6 +90,137 @@
             </div>
         </div>
     </section>
-</body>
 
+    <section class="secao-fotos-membros">
+        <h3 class="titulo-secao">Nossa Equipe</h3>
+        <hr class="traco-secao">
+        <h4 class="subtitulo-secao">conheça os Beeters</h4>
+        <p class="descricao-fotos-membros">Somos jovens estudantes que buscam aperfeiçoar seus conhecimentos em linguagens de programação e metodologias ágeis para entregar as melhores soluções com as tecnologias mais inovadoras e eficientes do mercado.</p>
+      
+        <div class="brand-carousel section-padding owl-carousel">
+            <div class="single-logo">
+            <a href="https://www.linkedin.com/in/arthur-bravo/" target=_blank><img src="img/quem somos/foto_Arthur.png" alt="Membro da Beets Jr: Arthur Ribeiro"></a>
+            <p class="nome-membro">Arthur Felipe</p>
+            <p class="cargo-membro">Diretor de RH</p>
+            <p><a class="linkedin-membro" href="https://www.linkedin.com/in/arthur-bravo/" target=_blank>LinkedIn</a></p>
+            </div>
+
+            <div class="single-logo">
+            <a href="https://www.linkedin.com/in/daniel-silva-a86a92187/" target=_blank><img src="img/quem somos/foto_Fit.png" alt="Membro da Beets Jr: Daniel Silva"></a>        
+            <p class="nome-membro">Daniel Silva</p>
+            <p class="cargo-membro">Diretor Comercial</p>
+            <p><a class="linkedin-membro" href="https://www.linkedin.com/in/daniel-silva-a86a92187/" target=_blank>LinkedIn</a></p>
+            </div>
+
+            <div class="single-logo">
+            <a href="https://www.linkedin.com/in/nataliascarvalho" target=_blank><img src="img/quem somos/foto_Faust.png" alt=" Membro da Beets Jr: Natália Carvalho"></a>         
+            <p class="nome-membro">Natália Carvalho</p>
+            <p class="cargo-membro">Vice Presidenta</p>
+            <p><a class="linkedin-membro" href="https://www.linkedin.com/in/nataliascarvalho" target=_blank>LinkedIn</a></p>
+            </div>
+
+            <div class="single-logo">
+            <a href="https://www.linkedin.com/in/nathaliekomatsu/" target=_blank><img src="img/quem somos/foto_Nathalie.png" alt="Membro da Beets Jr: Nathalie Komatsu"></a>
+            <p class="nome-membro">Nathalie Komatsu</p>
+            <p class="cargo-membro">Diretora de Marketing</p>
+            <p><a class="linkedin-membro" href="https://www.linkedin.com/in/nathaliekomatsu/" target=_blank>LinkedIn</a></p>
+            </div>
+
+            <div class="single-logo">
+            <a href="https://www.linkedin.com/in/gkyomen/" target=_blank><img src="img/quem somos/foto_Gabriel.png" alt="Membro da Beets Jr: Gabriel Kyomen"></a>
+            <p class="nome-membro">Gabriel Kyomen</p>
+            <p class="cargo-membro">Diretor de Projetos</p>
+            <p><a class="linkedin-membro" href="https://www.linkedin.com/in/gkyomen/" target=_blank>LinkedIn</a></p>
+            </div>
+
+            <div class="single-logo">
+            <a href="https://www.linkedin.com/in/crismerlyn-paiva/" target=_blank><img src="img/quem somos/foto_Samba.png" alt="Membro da Beets Jr: Cris Paiva"></a>
+            <p class="nome-membro">Cris Paiva</p>
+            <p class="cargo-membro">Presidenta</p>
+            <p><a class="linkedin-membro" href="https://www.linkedin.com/in/crismerlyn-paiva/" target=_blank>LinkedIn</a></p>
+            </div>
+        
+            <div class="single-logo">
+            <a class="linkedin-membro" href="https://www.linkedin.com/in/matheus-volpon-2612a2188/" target=_blank><img src="img/quem somos/foto_Matheus.png" alt="Membro da Beets Jr: Matheus Volpon"></a>
+            <p class="nome-membro">Matheus Volpon</p>
+            <p class="cargo-membro">Diretor Adm-Financeiro</p>
+            <p><a class="linkedin-membro" href="https://www.linkedin.com/in/matheus-volpon-2612a2188/" target=_blank>LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="filiacoes">
+        <h3 class="titulo-secao">Filiação</h3>
+        <hr class="traco-secao">
+        <h4 class="subtitulo-secao">rede de apoio</h4>
+        <div class="item-filiacao">
+            <img class="imagem-item-filiacao" src="img/quem somos/logo-ufscar.png" alt="Logotipo da Universidade Federal de São Carlos">
+            <p class="desc-item-filiacao">Somos orientados por doutores da Universidade Federal de São Carlos, uma das 15 melhores universidades da América Latina, recebendo apoio de profissionais com larga experiência na área</p>
+        </div>
+        <div class="item-filiacao">
+            <img class="imagem-item-filiacao" src="img/quem somos/logo-NuCa.png" alt="Logotipo do Núcleo Campinas de Empresas Juniores">
+            <p class="desc-item-filiacao">O Núcleo Campinas de Empresas Juniores (NuCa) é uma instância regional da Rede Paulista, com um total de 44 EJs afiliadas. A Beets Jr. se filiou ao NuCa em julho de 2020, onde iniciou sua imersão no <abbr title="Movimento Empresa Júnior">MEJ</abbr> Paulista.</p>
+        </div>
+        <div class="item-filiacao">
+            <img class="imagem-item-filiacao" src="img/quem somos/logo-Fejesp.png" alt="Logotipo da Federação de Empresas Juniores do Estado de São Paulo">
+            <p class="desc-item-filiacao">A Federação de Empresas Juniores do Estado de São Paulo é uma associação que representa e potencializa as EJs do Estado de São Paulo. A instância estadual representa o <abbr title="Movimento Empresa Júnior">MEJ</abbr> Paulista desde 1990.</p>
+        </div>
+        <div class="item-filiacao">
+            <img class="imagem-item-filiacao" src="img/quem somos/logo-BJ.png" alt="Logotipo do Brasil Júnior">
+            <p class="desc-item-filiacao">Integração com o Movimento Empresa Júnior Brasileiro, conectados com EJs dos mais variados ramos de serviço em todo o país, em prol da evolução da prática empreendedora.</p>
+        </div>
+    </section>
+
+    <section id="premiacoes">
+        <h3 id="titulo-premiacoes">Reconhecimentos</h3>
+        <hr id="linha-premiacoes">
+        <div class="premio">
+            <img class="imagem-premio" src="img/quem somos/selo-EJ-evolucao.png" alt="Selo do prêmio EJ Evolução do Processo Unificado de Federação">
+            <h4 class="titulo-premio">EJ Evolução do <abbr title="Processo Unificado de Federação">PUF</abbr></h4>
+            <p class="desc-premio">Em 2020, a Beets Jr. foi reconhecida como EJ Evolução do <abbr title="Processo Unificado de Federação">PUF</abbr> do Núcleo Campinas no palco do Expoente (Encontro Regional).</p>
+        </div>
+        <div class="premio">
+            <img class="imagem-premio" src="img/quem somos/selo-EJ-Do-Ninho.png" alt="Selo do prêmio EJ do Ninho">
+            <h4 class="titulo-premio">EJ do Ninho</h4>
+            <p class="desc-premio">No Prêmio <abbr title="Federação de Empresas Juniores do Estado de São Paulo">FEJESP</abbr> 2020 a Beets Jr foi reconhecida como EJ do Ninho do Núcleo Campinas, como EJ recém federada de destaque!</p>
+        </div>
+        <p id="hashtag">#SejaUmBeeter</p>
+    </section>
+
+    <footer class="box-footer">
+        <div class="div-footer">
+            <img class= "logo-rodape" src="img/logos/Logo_BeetsJr_2020_3-3.png" alt="Logo Beets Jr.">
+        </div>
+        
+        <div class="div-footer">
+            <div class="redes-sociais">
+                <img class="social" src="img/redes sociais/icone_facebook.png" alt="Facebook Beets Jr">
+                <img class="social" src="img/redes sociais/icone_instagram.png" alt="Instagram Beets Jr">
+                <img class="social" src="img/redes sociais/icone_linkedin.png" alt="Linkdin Beets Jr">
+            </div>
+
+            <div class="direitos-autorais">
+                <p class="footer-txt">@2021 Copyright</p>
+                <p class="footer-txt txt-top">Desenvolvido com amor pelos Beeters</p>
+            </div>
+        </div>
+            
+        <div class="div-footer div-footer3">
+            <div class="contatos">
+                <p class="footer-txt">contato@beetsjr.com.br
+                <p class="footer-txt txt-top">(11) 94462-1690</p>
+            </div>
+            
+            <div class="enderecos">
+                <p class="footer-txt txt-end">Rodovia João Leme dos Santos, km 110 - Bairro Itinga, Sorocaba.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script's da seção rotativa -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/banner.js"></script>
+</body>
 </html>
