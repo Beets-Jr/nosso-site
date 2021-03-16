@@ -1,17 +1,17 @@
 /* FONTE */
 @font-face {
     font-family: Qanelas-light;
-    src: url(../QanelasSoftUltraLight.otf)
+    src: url(QanelasSoftUltraLight.otf)
 }
 
 @font-face {
     font-family: Qanelas-bold;
-    src: url(../QanelasSoftBold.otf)
+    src: url(QanelasSoftBold.otf)
 }
 
 @font-face {
     font-family: Qanelas-medium;
-    src: url(../QanelasSoftMedium.otf)
+    src: url(QanelasSoftMedium.otf)
 }
 
 body {

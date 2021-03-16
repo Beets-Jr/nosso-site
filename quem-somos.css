@@ -1,34 +1,3 @@
-@font-face {
-    font-family: Qanelas-light;
-    src: url(../QanelasSoftUltraLight.otf)
-}
-
-@font-face {
-    font-family: Qanelas-bold;
-    src: url(../QanelasSoftBold.otf)
-}
-
-@font-face {
-    font-family: Qanelas-medium;
-    src: url(../QanelasSoftMedium.otf)
-}
-
-/*Cor+fundo da fonte quando for selecionada com o mouse*/
-::-moz-selection {
-    background-color: #630043;
-    color: white;
-  }
-  
-  /*Cor+fundo da fonte quando for selecionada*/
-  ::selection {
-    background-color: #630043;
-    color: white;
-  }
-
-body {
-    font-family: 'Qanelas-medium', Calibri;
-}
-
 /*Banner*/
 #banner {
     width: 100%;
@@ -131,215 +100,258 @@ body {
 }
 
 /* MVV */
+#traco-mvv {
+    background-color: #B872A2;
+  	height: 13px;
+    border: 0;
+    border-radius: 10px;
+    width: 85%;
+    margin: 3% auto;
+}
 
-.mvv{
-    position: relative;
+#mvv {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+#missao {
+    width: 35%;
+}
+
+#visao {
+    width: 35%;
+}
+
+#valores {
+    width: 50%;
+}
+
+.titulo-item-mvv {
+    color: #630042;
+    text-align: center;
+    font-size: 2.2em;
+    text-transform: uppercase;
+}
+
+.subtitulo-item-mvv {
+    color: #bbb;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.desc-mvv {
+    color: white;
+    position: absolute;
+    line-height: 1.3;
+}
+
+#div-missao {
     width: 100%;
-    height: 950px;
-    margin: 30px -5px;
+    position: relative;
+    margin: 0 auto;
 }
 
-.inner-mvv{
-    position: absolute;
-    display: flex;
-    flex-flow: wrap;
-    max-width: 90%;
-    height: 100%;
+#div-missao .desc-mvv {
+    top: 20%;
+    left: 15%;
+    right: 30%;
 }
 
-.missao{
-    text-align: left;
-    align-self: left;
-    max-width: 40%;
-    height: 53%;
-    margin-left: 13%;
-    background-image: url("img/missao_visao_valores-1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: left;
-    background-position-y: bottom;
-
+#div-visao {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
 }
 
-.visao{
+#div-visao .desc-mvv {
+    top: 25%;
+    left: 38%;
+    right: 20%;
     text-align: right;
-    max-width: 40%;
-    height: 53%;
-    margin-left: 47%;
-    background-image: url("img/missao_visao_valores-2.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: bottom;
-    position: absolute;
-
 }
 
- .valores{
-    max-width: 90%;
-    height: 53%;
-    margin-left: 8.5%;
-    margin-top: 35%;
-    padding-left: 30%;
-    padding-right: 30%;
-    background-image: url("img/missao_visao_valores-3.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: bottom;
-    position: absolute;
-
+#div-valores {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
 }
 
-#txt-missao{
-    font-size: 19px;
-    color: white;
-    max-width: 59.8%;
-    max-height: 80%;
-    margin-left: 12%;
-    margin-top: 22%;
+#div-valores .desc-mvv {
+    top: 35%;
+    left: 20%;
+    right: 30%;
 }
 
-#txt-visao{
-    font-size: 19px;
-    color: white;
-    max-width: 47%;
-    max-height: 80%;
-    margin-left: 34%;
-    margin-top: 25%;
-}
-
-
-#lista-valores{
+.lista-mvv {
     list-style-type: disc;
-    font-size: 20px;
-    color: white;
-    max-width: 100%;
-    max-height: 100%;
-    margin-top: 51%;
-    margin-left: -22.3%;
 }
 
-#titulo-missao{
-    color: #630043;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 26px;
-    text-align: center;
-    margin-left: -15%;
+.imagem-mvv-missao {
+    width: 100%;
 }
 
-#subtitulo-missao{
-    color: #848484;
-    font-size: 20px;
-    text-align: center;
-    margin-left: -14.9%;
-
+.imagem-mvv-visao {
+    width: 100%;
 }
 
-#titulo-visao{
-    color: #630043;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 26px;
-    text-align: center;
-}
-#subtitulo-visao{
-    color: #848484;
-    font-size: 20px;
-    text-align: center;
+.imagem-mvv-valores {
+    width: 100%;
+    margin-top: -8%;
 }
 
-#titulo-valores{
-    color: #630043;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 26px;
-    text-align: center;
-    padding-top: 30px;
-}
-#subtitulo-valores{
-    color: #848484;
-    font-size: 20px;
-    text-align: center;
+.imagem-mvv-missao-mobile, .imagem-mvv-visao-mobile, .imagem-mvv-valores-mobile {
+    opacity: 0;
+    height: 0;
 }
 
-@media only screen and (max-width: 959px) {
-
-
-}
-
-@media only screen and (max-width: 800px) {
-    
-    #titulo-missao{
-        font-size: 18px;
-    }
-    #subtitulo-missao{
-        font-size: 15px;
-    }
-    
-    #titulo-visao{
-        font-size: 18px;
-    }
-    #subtitulo-visao{
-      
-        font-size: 15px;
-
-    }
-    
-    #titulo-valores{
-        font-size: 18px;
-        padding-top: 50px;
-        padding-right: 45px;
-    }
-    #subtitulo-valores{
-        font-size: 15px;
-        padding-right: 45px;
+@media only screen and (max-width: 1199px) {
+    .desc-mvv {
+        font-size: 0.9em;
     }
 
-    .missao{
-        background-position-x: 15%;
-        background-position-y: 80%;
-        background-size: 100%;
+    #div-valores .desc-mvv {
+        top: 30%;
+    }
+} 
+
+@media only screen and (max-width: 1024px) {
+    #div-missao .desc-mvv {
+        top: 15%;
     }
 
-    .visao{
-        background-position-x: 15%;
-        background-position-y: 80%;
-        background-size: 100%;
+    #div-visao .desc-mvv {
+        top: 15%;
     }
 
-    .valores{
-        background-position-x: 40%;
-        background-position-y: -400%;
-        background-size: 80%;
-    }
-
-    #txt-missao{
-        font-size: 12px;
-        margin-top: 14%;
-    }
-    
-    #txt-visao{
-        font-size: 12px;
-        margin-top: 18%;
-        margin-left: 32%;
-    }
-    
-    
-    #lista-valores{
-        font-size: 13px;
-        margin-top: 40%;
-    }
-
-    .mvv{
-        height: 500px;
+    #div-valores .desc-mvv {
+        top: 28%;
     }
 }
 
-@media only screen and (max-width: 550px) {
-
+@media only screen and (max-width: 900px) {
+    .desc-mvv {
+        font-size: 0.8em;
+    }
 }
+
+@media only screen and (max-width: 768px) {
+    #mvv {
+        margin-top: 3%;
+    }
+
+    .titulo-item-mvv {
+        font-size: 2.8em;
+        margin-top: 5%;
+    }
+
+    .subtitulo-item-mvv {
+        font-size: 2em;
+    }
+
+    #missao, #visao, #valores {
+        width: 100%;
+        text-align: center;
+    }
+
+    .desc-mvv {
+        font-size: 1em;
+    }
+
+    #div-missao .desc-mvv {
+        text-align: center;
+        top: 20%;
+        left: 30%;
+    }
+
+    #div-visao .desc-mvv {
+        text-align: center;
+        top: 30%;
+        right: 30%;
+        left: 30%;
+    }
+
+    #div-valores .desc-mvv {
+        text-align: left;
+        top: 24%;
+        left: 38%;
+    }
+
+    .imagem-mvv-missao, .imagem-mvv-visao, .imagem-mvv-valores {
+        opacity: 0;
+        height: 0;
+    }
+
+    .imagem-mvv-missao-mobile, .imagem-mvv-visao-mobile, .imagem-mvv-valores-mobile {
+        opacity: 1;
+        width: 70%;
+        height: auto;
+        margin-top: -5%;
+    }
+
+    .imagem-mvv-valores-mobile {
+        margin-top: -1%;
+    }
+} 
+
+@media only screen and (max-width: 585px) {
+    .titulo-item-mvv {
+        font-size: 2.5em;
+    }
+
+    .subtitulo-item-mvv {
+        font-size: 1.6em;
+    }
+
+    #div-missao .desc-mvv {
+        top: 20%;
+        left: 20%;
+        right: 20%;
+    }
+
+    #div-visao .desc-mvv {
+        top: 30%;
+        right: 20%;
+        left: 20%;
+    }
+
+    #div-valores .desc-mvv {
+        top: 22%;
+        left: 25%;
+        right: 20%;
+    }
+
+    .imagem-mvv-missao-mobile, .imagem-mvv-visao-mobile, .imagem-mvv-valores-mobile {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .titulo-item-mvv {
+        font-size: 2em;
+    }
+
+    .subtitulo-item-mvv {
+        font-size: 1.2em;
+    }
+
+    .desc-mvv {
+        font-size: 0.8em;
+    }
+
+    #div-valores .desc-mvv {
+        top: 25%;
+        font-size: 0.7em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .desc-mvv {
+        font-size: 1.1em;
+    }
+
+    #div-valores .desc-mvv {
+        top: 30%;
+        left: 20%;
+    }
+} 
