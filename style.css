@@ -90,7 +90,7 @@ abbr {
     padding: 25px;
 }
 
-.menu ul li a {
+.menu ul a {
     width: auto;
     height: 80px;
     font-size: 18px;
