@@ -21,6 +21,7 @@ html {
 body {
     font-family: 'Qanelas-medium', Calibri;
     overflow-x: hidden;
+    padding-top: 80px; /* altura do menu */
 }
 
 .medium {
@@ -55,8 +56,7 @@ abbr {
     top: 0;  /* por ser a header, top 0 */
     z-index: 100; /* deixar menu fixo */
     display: inline-block; /* centralizar */
-    flex-wrap: wrap; /* centralizar */
-    position: relative; /* centralizar */
+    position: fixed; /* centralizar */
     box-shadow: 5px 1px 15px  #630043; /* sombra */
 }
 
