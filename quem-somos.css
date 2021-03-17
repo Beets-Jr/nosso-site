@@ -13,8 +13,6 @@
     width: 100%;
 }
 
-/*---BANNER---*/
-
 .banner-txt {
     text-align: left;
     position: absolute;
@@ -316,7 +314,7 @@
     }
 
     #div-valores .desc-mvv {
-        top: 28%;
+        top: 26%;
     }
 }
 
@@ -453,7 +451,7 @@
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    margin: 6% auto;
+    margin: auto;
     justify-content: space-evenly;
 }
 
