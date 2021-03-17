@@ -1215,6 +1215,11 @@
     margin: 30px auto;
 }
 
+#btn-avaliacao a {
+    text-decoration: none;
+    color: white;
+}
+
 @media only screen and (max-width: 1105px) {
     .item-lista-diferenciais {
         max-width: 20%;
