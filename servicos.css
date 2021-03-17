@@ -27,6 +27,7 @@ b {
 .desc-item-CARP {
     padding-top: 5%;
     padding-bottom: 5%;
+    color: #630043;
 }
 
 .item-CARP {
@@ -72,6 +73,7 @@ b {
     padding-left: 1em;
     text-indent: -1em;
     font-weight: bold;
+    color: #630043;
 }
 
 .item-lista-detalhes-CARP:before {
