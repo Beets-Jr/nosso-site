@@ -559,27 +559,28 @@
 .titulo-secao {
     flex-basis: 100%;
     color: #630043;
-    font-size: 2.3em;
+    font-size: 2.5em;
     padding-bottom: 0;
     margin-bottom: 0;
-    font-family: 'Qanelas-bold';
+    font-weight: bold;
     text-transform: uppercase;
 }
 
 .traco-secao {
     background-color: #febdf2;
-    height: 13px;
+  	height: 13px;
     border: 0;
     border-radius: 10px;
-    width: 30%;
-    margin-top: -15px;
+    width: 50%;
+    margin-top: -11px;
     z-index: -1;
 }
 
 .subtitulo-secao {
     flex-basis: 100%;
-    color: #BBB;
-    font-size: 1.8em;
+    color: #bbb;
+    font-size: 2em;
+    line-height: 80%;
 }
 
 .item-filiacao {
@@ -611,12 +612,36 @@
 }
 
 @media only screen and (max-width:798px) {
+    .traco-secao {
+        width: 70%
+    }
+
+    .titulo-secao {
+        font-size: 2em;
+    }
+
+    .subtitulo-secao {
+        font-size: 1.5em;
+    }
+
     .item-filiacao {
         flex-basis: 55%;
     }
 }
 
 @media only screen and (max-width:500px) {
+    .traco {
+        width: 86%;
+    }
+
+    .titulo-secao {
+        font-size: 1.8em;
+    }
+
+    .subtitulo-secao {
+        font-size: 1.3em;
+    }
+
     .item-filiacao {
         flex-basis: 80%;
     }
