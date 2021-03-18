@@ -121,14 +121,14 @@
     height: 55px;
     position: relative;
     display: inline-block;
-    background: url(img/redes\ sociais/icone_facebook.png) no-repeat;
+    background: url(../img/redes\ sociais/facebook.png) no-repeat;
     background-size: contain;
     margin-right: 3%;
     margin-left: -2%;
 }
 
 .facebook:hover {
-    background: url(img/redes\ sociais/icone_facebook_hover.png) no-repeat;
+    background: url(../img/redes\ sociais/facebook-hover.png) no-repeat;
     cursor: pointer;
     background-size: contain;
 }
@@ -138,13 +138,13 @@
     height: 55px;
     position: relative;
     display: inline-block;
-    background: url(img/redes\ sociais/icone_instagram.png) no-repeat;
+    background: url(../img/redes\ sociais/instagram.png) no-repeat;
     background-size: contain;
     margin-right: 3%;
 }
 
 .instagram:hover {
-    background: url(img/redes\ sociais/icone_instagram_hover.png) no-repeat;
+    background: url(../img/redes\ sociais/instagram-hover.png) no-repeat;
     cursor: pointer;
     background-size: contain;
 }
@@ -154,12 +154,12 @@
     height: 55px;
     position: relative;
     display: inline-block;
-    background: url(img/redes\ sociais/icone_linkedin.png) no-repeat;
+    background: url(../img/redes\ sociais/linkedin.png) no-repeat;
     background-size: contain;
 }
 
 .linkedin:hover {
-    background: url(img/redes\ sociais/icone_linkedin_hover.png) no-repeat;
+    background: url(../img/redes\ sociais/linkedin-hover.png) no-repeat;
     cursor: pointer;
     background-size: contain;
 }
