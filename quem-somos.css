@@ -584,7 +584,6 @@
 }
 
 .item-filiacao {
-    flex-basis: 20%;
     width: 20%;
     border: none;
     border-radius: 20px;
@@ -626,6 +625,7 @@
 
     .item-filiacao {
         flex-basis: 55%;
+        height: 250px; 
     }
 }
 
