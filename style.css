@@ -67,8 +67,8 @@ abbr {
 /* --- INÍCIO DO MENU --- */
 .logo {
     height: 70px;
-    width: 187px;
-    padding-left: 30px;
+    width: auto;
+    padding-left: 42px;
     padding-top: 2px;
     float: left;
 }
@@ -171,8 +171,8 @@ abbr {
 }
 
 .logo-rodape {
-    height: 72px;
-    width: 187px;
+    height: 70px;
+    width: auto;
     padding-left: 30px;
     padding-top: 25px;
     float: left;
@@ -204,11 +204,11 @@ abbr {
 /* Responsividade para Mobile*/
 @media (max-width: 1024px) {
     .logo {
-    height: 72px;
-    width: 187px;
-    padding-left: 30px;
-    padding-top: 2px;
-    float: left;
+        height: 70px;
+        width: auto;
+        padding-left: 30px;
+        padding-top: 2px;
+        float: left;
     }
 
     .icone-menu {
@@ -252,10 +252,9 @@ abbr {
 
 @media (max-width: 750px) {
     .logo{
-        height: 65px;
-        width: 170px;
+        height: 70px;
+        width: auto;
         padding-left: 20px;
-        padding-top: 5px;
         float: left;
     }
 
@@ -271,11 +270,11 @@ abbr {
     }
 
     .logo-rodape {
-        height: 65px;
-        width: 170px;
+        height: 70px;
+        width: auto;
         display: block; /* Centralizar */
-        margin-right: auto ; /* Centralizar */
-        margin-left: auto; /* Centralizar */
+        margin: 20px auto;
+        padding: 0;
         float: none;
     }
 
@@ -293,10 +292,6 @@ abbr {
 
     .direitos-autorais {
         margin-top: 5px;
-    }
-
-    .logo-rodape {
-        margin-top: 20px;
     }
 
     .footer-txt, .txt-end {
