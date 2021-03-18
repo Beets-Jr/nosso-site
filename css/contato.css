@@ -1,27 +1,22 @@
-b {
-    font-weight: 900;
-}
-
 #fale-conosco {
     display: flex;
     flex-wrap: wrap;
     width: 90%; 
     justify-content: space-around;   
-    margin: 0 auto;
-    font-family: 'Qanelas-medium', Calibri;
+    margin: 3% auto;
 }
 
 #titulo-fale-conosco {
     background-color: #b872a2;
     color: #fff;
     font-size: 1.6em;
-    font-family: 'Qanelas-bold', Calibri;
     text-align: center;
     border: none;
     border-radius: 8px;
-    margin: 0 auto -30px auto;
+    margin: 2.5% auto -30px auto;
     padding: 0.8% 3%;
     height: 85%;
+    text-transform: uppercase;
 }
 
 #linha-fale-conosco {
@@ -39,6 +34,12 @@ b {
     margin-bottom: 4%;
 }
 
+@media only screen and (max-width: 650px) {
+    #frase-formulario {
+        margin-top: 4%;
+    }
+}
+
 /* INÍCIO FORMULÁRIO */
 #formulario-div {
     display: flex;
@@ -46,7 +47,6 @@ b {
 }
 
 #formulario {
-    font-family: Qanelas-bold;
     text-align: right;
     color: #630043;
 }
@@ -71,7 +71,6 @@ b {
     color: #fff;
     border: none;
     border-radius: 5px;
-    font-weight: bold;
     font-size: 1em;
     width: 15%;
     height: 8%;
@@ -81,6 +80,12 @@ b {
 #formulario label {
     display: inline-block;
     margin-top: 6px;
+}
+
+@media only screen and (max-width: 480px) {
+    .btn-enviar {
+        font-size: 0.7em;
+    }
 }
 /* FIM FORMULÁRIO */
 
@@ -116,14 +121,14 @@ b {
     height: 55px;
     position: relative;
     display: inline-block;
-    background: url(img/redes\ sociais/icone_facebook.png) no-repeat;
+    background: url(../img/redes\ sociais/facebook.png) no-repeat;
     background-size: contain;
     margin-right: 3%;
     margin-left: -2%;
 }
 
 .facebook:hover {
-    background: url(img/redes\ sociais/icone_facebook_hover.png) no-repeat;
+    background: url(../img/redes\ sociais/facebook-hover.png) no-repeat;
     cursor: pointer;
     background-size: contain;
 }
@@ -133,13 +138,13 @@ b {
     height: 55px;
     position: relative;
     display: inline-block;
-    background: url(img/redes\ sociais/icone_instagram.png) no-repeat;
+    background: url(../img/redes\ sociais/instagram.png) no-repeat;
     background-size: contain;
     margin-right: 3%;
 }
 
 .instagram:hover {
-    background: url(img/redes\ sociais/icone_instagram_hover.png) no-repeat;
+    background: url(../img/redes\ sociais/instagram-hover.png) no-repeat;
     cursor: pointer;
     background-size: contain;
 }
@@ -149,12 +154,12 @@ b {
     height: 55px;
     position: relative;
     display: inline-block;
-    background: url(img/redes\ sociais/icone_linkedin.png) no-repeat;
+    background: url(../img/redes\ sociais/linkedin.png) no-repeat;
     background-size: contain;
 }
 
 .linkedin:hover {
-    background: url(img/redes\ sociais/icone_linkedin_hover.png) no-repeat;
+    background: url(../img/redes\ sociais/linkedin-hover.png) no-repeat;
     cursor: pointer;
     background-size: contain;
 }
