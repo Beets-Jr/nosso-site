@@ -55,17 +55,16 @@ abbr {
     top: 0;  /* por ser a header, top 0 */
     z-index: 100; /* deixar menu fixo */
     display: inline-block; /* centralizar */
-    flex-wrap: wrap; /* centralizar */
     position: relative; /* centralizar */
     box-shadow: 5px 1px 15px  #630043; /* sombra */
 }
 
 /* --- INÍCIO DO MENU --- */
 .logo {
-    height: 50px;
+    height: 70px;
     width: 187px;
-    padding-top: 15px;
-    padding-left: 50px;
+    padding-left: 30px;
+    padding-top: 2px;
     float: left;
 }
 
@@ -167,11 +166,11 @@ abbr {
 }
 
 .logo-rodape {
+    height: 72px;
     width: 187px;
-    height: 50px;
+    padding-left: 30px;
+    padding-top: 25px;
     float: left;
-    margin-top: 30px;
-    margin-left: 20px;
 }
 
 .contatos {
@@ -197,60 +196,14 @@ abbr {
     margin: 20px 8px 0px 0px;
 }
 
-@media (max-width: 750px) {
-    .box-footer{
-        height: auto;
-    }
-
-    .div-footer, .div-footer3 {
-        width: 100%;
-        display: block; /* Centralizar */
-        margin-right: auto ; /* Centralizar */
-        margin-left: auto; /* Centralizar */
-    }
-
-    .logo-rodape {
-        width: 187px;
-        height: auto;
-        display: block; /* Centralizar */
-        margin-right: auto ; /* Centralizar */
-        margin-left: auto; /* Centralizar */
-        float: none;
-    }
-
-    .redes-sociais {
-        align-items: center;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .footer-txt {
-        margin-top: 10px;
-    }
-
-    .direitos-autorais {
-        margin-top: 5px;
-    }
-
-    .logo-rodape {
-        margin-top: 20px;
-    }
-
-    .footer-txt, .txt-end {
-        text-align: center;
-        width: 100%;
-    }
-}
-
 /* Responsividade para Mobile*/
 @media (max-width: 1024px) {
     .logo {
-        height: 35px;
-        width: 130px;
-        padding-top: 15px;
-        padding-left: 50px;
+    height: 72px;
+    width: 187px;
+    padding-left: 30px;
+    padding-top: 2px;
+    float: left;
     }
 
     .icone-menu {
@@ -291,3 +244,59 @@ abbr {
         transition: all .5s;
     }
 }
+
+@media (max-width: 750px) {
+    .logo{
+        height: 65px;
+        width: 170px;
+        padding-left: 20px;
+        padding-top: 5px;
+        float: left;
+    }
+
+    .box-footer{
+        height: auto;
+    }
+
+    .div-footer, .div-footer3 {
+        width: 100%;
+        display: block; /* Centralizar */
+        margin-right: auto ; /* Centralizar */
+        margin-left: auto; /* Centralizar */
+    }
+
+    .logo-rodape {
+        height: 65px;
+        width: 170px;
+        display: block; /* Centralizar */
+        margin-right: auto ; /* Centralizar */
+        margin-left: auto; /* Centralizar */
+        float: none;
+    }
+
+    .redes-sociais {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-txt {
+        margin-top: 10px;
+    }
+
+    .direitos-autorais {
+        margin-top: 5px;
+    }
+
+    .logo-rodape {
+        margin-top: 20px;
+    }
+
+    .footer-txt, .txt-end {
+        text-align: center;
+        width: 100%;
+    }
+}
+
