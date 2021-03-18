@@ -1,0 +1,302 @@
+/* FONTE */
+@font-face {
+    font-family: Qanelas-extraBold;
+    src: url(../fonts/QanelasSoftExtraBold.otf)
+}
+
+@font-face {
+    font-family: Qanelas-bold;
+    src: url(../fonts/QanelasSoftBold.otf)
+}
+
+@font-face {
+    font-family: Qanelas-medium;
+    src: url(../fonts/QanelasSoftMedium.otf)
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Qanelas-medium', Calibri;
+    overflow-x: hidden;
+    padding-top: 80px; /* altura do menu */
+}
+
+.font-medium {
+    font-family: 'Qanelas-medium';
+}
+
+.font-bold {
+    font-family: 'Qanelas-bold';
+}
+
+.font-extraBold {
+    font-family: 'Qanelas-extraBold';
+}
+
+/*Cor+fundo da fonte quando for selecionada com o mouse*/
+::-moz-selection {
+    background-color: #630043;
+    color: white;
+}
+
+/*Cor+fundo da fonte quando for selecionada*/
+::selection {
+    background-color: #630043;
+    color: white;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+/*CAIXA DA HEADER*/
+.caixa {
+    width: 100%;
+    height: 80px;
+    background-color: #630043;
+    top: 0;  /* por ser a header, top 0 */
+    z-index: 100; /* deixar menu fixo */
+    display: inline-block; /* centralizar */
+    position: fixed; /* centralizar */
+    box-shadow: 5px 1px 15px  #630043; /* sombra */
+}
+
+/* --- INÍCIO DO MENU --- */
+.logo {
+    height: 70px;
+    width: auto;
+    padding-left: 42px;
+    padding-top: 2px;
+    float: left;
+}
+
+.menu {
+    width: auto;
+    height: 80px;
+    position: relative;
+    float: right;
+    margin: 33px 40px 20px 20px;
+}
+
+.menu ul {
+    width: auto;
+    height: 80px;
+    list-style: none;
+    position: relative;
+    float: right;
+}
+
+.menu li {
+    display: inline;
+    padding: 25px;
+}
+
+.menu ul a {
+    width: auto;
+    height: 80px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+
+.item-menu:hover {
+    cursor: pointer;
+    border-bottom: 3px solid #ffffff;
+}
+
+.icone-menu {
+    float: right;
+    margin-right: -5px;
+    margin-top: -4px;
+    display: none;
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+/* --- FIM DO MENU --- */
+
+.box-footer {
+    width: 100%;
+    height: 110px;
+    background-color: #85CC79;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 10px auto 0px;
+    box-shadow: 5px 1px 15px  #85CC79; /* sombra */
+}
+
+.div-footer {
+    width: 33%;
+    height: auto;
+    position: block;
+    float: left;
+    position: relative;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div-footer3 {
+    width: 200px;
+    height: auto;
+    float: right;
+}
+
+.footer-txt {
+    font-size: 13px;
+    color: #fff;
+}
+
+.txt-top {
+    margin-top: 5px;
+}
+
+.redes-sociais {
+    width: 100%;
+    height: 60px;
+    cursor: pointer;
+}
+
+.direitos-autorais {
+    width: auto;
+    height: auto;
+    margin-top: -7px;
+}
+
+.logo-rodape {
+    height: 70px;
+    width: auto;
+    padding-left: 30px;
+    padding-top: 25px;
+    float: left;
+}
+
+.contatos {
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+}
+
+.enderecos {
+    width: auto;
+    height: auto;
+    margin-top: 15px;
+}
+
+.txt-end {
+    max-width: auto;
+    margin-top: -8px;
+}
+
+.social {
+    width: 30px;
+    height: 30px;
+    margin: 20px 8px 0px 0px;
+}
+
+/* Responsividade para Mobile*/
+@media (max-width: 1024px) {
+    .logo {
+        height: 70px;
+        width: auto;
+        padding-left: 30px;
+        padding-top: 2px;
+        float: left;
+    }
+
+    .icone-menu {
+        display: inline;
+    }
+
+    .menu ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #630043;
+        text-align: center;
+        transition: all .0s;
+        left: -100%; /* não está sendo exibido, só vai ser exibido quando clicar no menu*/
+        top:80px;
+    }
+
+    .menu ul li {
+        display: block;
+        margin: 0px;
+    }
+
+    .item-menu:hover {
+        background-color:#d2a6c4 ;
+        border-bottom: none;
+    }
+
+    .item-menu {
+        border-top: 1px solid #d2a6c4;
+    }
+
+    .item-menu2 {
+        border-bottom: 1px solid #d2a6c4;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+        transition: all .5s;
+    }
+}
+
+@media (max-width: 750px) {
+    .logo{
+        height: 70px;
+        width: auto;
+        padding-left: 20px;
+        float: left;
+    }
+
+    .box-footer{
+        height: auto;
+    }
+
+    .div-footer, .div-footer3 {
+        width: 100%;
+        display: block; /* Centralizar */
+        margin-right: auto ; /* Centralizar */
+        margin-left: auto; /* Centralizar */
+    }
+
+    .logo-rodape {
+        height: 70px;
+        width: auto;
+        display: block; /* Centralizar */
+        margin: 20px auto;
+        padding: 0;
+        float: none;
+    }
+
+    .redes-sociais {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-txt {
+        margin-top: 10px;
+    }
+
+    .direitos-autorais {
+        margin-top: 5px;
+    }
+
+    .footer-txt, .txt-end {
+        text-align: center;
+        width: 100%;
+    }
+}
+

@@ -1,15 +1,237 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    
+<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beets Jr.</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Beets Jr. - Idealize e Desenvolva</title>
+
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 
 <body>
-    
-</body>
+    <header class="caixa">
+        <div class="logo">
+            <a href="index.html"><img class="logo" src="img/logos/Beets-branca.png" alt="Logo da Beets Jr, é formada pela união do símbolo de programação e letra 'b', do nome da empresa."></a>
+        </div>
 
+        <nav class="menu">
+            <input type="checkbox" id="check">
+            <label class="icone-menu" for="check"><img src="img/hamburger.png"></label><!--icon menu -->
+            <ul class="itens-menu"> 
+                <a href="index.html"><li class="item-menu">Home</li></a>
+                <a href="quem-somos.html"><li class="item-menu">Quem Somos</li></a>
+                <a href="servicos.html"><li class="item-menu">Serviços</li></a>
+                <a href="contato.html"><li class="item-menu item-menu2">Contato</li></a>
+            </ul>
+        </nav>  
+    </header>
+  <!-- Slideshow container -->
+    <section class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <img class="slide-img" src="img/banners/home-1.png" alt="Banner da página inicial, apresenta fundo roxo e o slogan: 'Idealize e Desenvolva'.">
+            <div class="slide-1-txt">
+                <h1 id="slide-titulo-1" class="font-extraBold">Idealize e desenvolva</h1>
+                <p id="slide-subtitulo-1">Desenvolvemos o seu site, do seu jeito, sem complicações!</p>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <img class="slide-img" src="img/banners/home-2.png" alt="Segundo banner da página inicial, de fundo cinza e com uma ilustração de duas pessoas construindo um site. Além disso, há também a frase 'A sua solução está aqui!' e um botão para conhecer os serviços da empresa.">
+            <div class="slide-2-txt">
+                <h1 id="slide-titulo-2" class="font-extraBold">A sua solução está aqui!</h1>
+                <p id="slide-subtitulo-2">Alavanque o seu negócio com um site personalizado para você!</p>
+                <button id="btn-pedido-2">
+                    <a href="servicos.html">conheça nossos serviços</a>
+                </button>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <img class="slide-img" src="img/banners/home-3.png" alt="Terceiro banner da página inicial, de fundo cinza e com uma ilustração de uma mulher montando uma construindo um site. Além disso, há também a frase 'O seu site com a sua cara!' e um botão para fazer um orçamento de serviço.">
+            <div class="slide-3-txt">
+                <h1 id="slide-titulo-3" class="font-extraBold">O seu site com a sua cara</h1>
+                <p id="slide-subtitulo-3">Criamos o seu site com base nas suas necessidades!</p>
+                <button id="btn-pedido-3">
+                    <a href="contato.html">avaliação gratuita</a>
+                </button>
+            </div>
+        </div>
+
+        <div class="bolinhas">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev font-bold" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next font-bold" onclick="plusSlides(1)">&#10095;</a>
+    </section>
+
+    <section id="descricao">
+        <p><b>Beets Jr, empresa júnior de Ciência da Computação na UFSCar Sorocaba</b></p>
+    </section>
+
+    <section id="linha" class="jornada-cliente">
+        <div class="item-jornada">
+            <div class="bolinha">
+            </div>
+            <div class="item-jornada-conteudo">
+                <h3 class="font-bold">Diagnóstico inicial</h3>
+                <p>Análise inicial das suas necessidades e possibilidades de serviços.</p>
+                <span class="imagem"><img src="img/jornada do cliente/diagnostico.png" alt="Imagem que representa a primeira etapa da jornada do cliente: Diagnóstico Inicial. A imagem apresenta uma mulher, em frente a um computador, apontando para gráficos presentes no mesmo."></span>
+            </div> 
+        </div>
+
+        <div class="item-jornada">
+            <div class="bolinha">
+            </div>
+
+            <div class="item-jornada-conteudo">
+                <h3 class="font-bold">Alinhamento</h3>
+                <p>Aprovação do protótipo inicial, com possíveis ajustes para iniciar a implementação.</p>
+                <span class="imagem"><img src="img/jornada do cliente/alinhamento.png" alt="Imagem que representa a segunda etapa da jornada do cliente: Alinhamento. A imagem apresenta um homem, em frente a um computador e segurando um grande lápis, marcando itens de uma lista de controle."></span>
+            </div>
+        </div>
+
+        <div class="item-jornada">
+            <div class="bolinha">
+            </div> 
+
+            <div class="item-jornada-conteudo">
+                <h3 class="font-bold">Desenvolvimento</h3>
+                <p>Implementação do site, com entregas parciais, reuniões de alinhamento e <b>entrega final</b>.</p>
+                <span class="imagem"><img src="img/jornada do cliente/desenvolvimento.png" alt="Imagem que representa a terceira etapa da jornada do cliente: Desenvolvimento. A imagem apresenta três pessoas - dois homens e uma mulher -, construindo e personalizando um site."></span>
+            </div>
+        </div> 
+
+        <div class="item-jornada">
+            <div class="bolinha">
+            </div>
+
+            <div class="item-jornada-conteudo">
+                <h3 class="font-bold">Hospedagem</h3>
+                <p>Configurações de pacotes de hospedagem e domínio do site.</p>
+                <span class="imagem"><img src="img/jornada do cliente/hospedagem.png" alt="Imagem que representa a quarta etapa da jornada do cliente: Hospedagem. A imagem apresenta dois homens - um deles em uma escada - organizando páginas da web em um computador."></span>
+            </div> 
+        </div> 
+
+        <div class="item-jornada">
+            <div class="bolinha">
+            </div>
+
+            <div class="item-jornada-conteudo">
+                <h3 class="font-bold">Acompanhamento</h3>
+                <p>Consultoria pós venda para possíveis ajustes ou manutenção.</p>
+                <span class="imagem"><img src="img/jornada do cliente/acompanhamento.png" alt="Imagem que representa a quinta e última etapa da jornada do cliente: Acompanhamento. A imagem apresenta duas pessoas - um homem e uma mulher. A mulher está voltada para a esquerda e segurando um megafone, enquanto o homem está voltado para a direita e segurando uma grande lâmpada. Entre eles, há um desenho de um alvo."></span>
+            </div> 
+        </div> 
+	</section> 
+
+    <section class="orcamento-jornada">
+        <h3 class="frase-orcamento font-medium">Idealizou? Então vamos desenvolver essa ideia!</h3>
+        <button class="btn-jornada font-medium" name="botao" onclick="location.href='contato.html';">Solicite um orçamento</button>
+    </section>
+  
+  <section class="CARP">
+        <div class="CARP-inner">
+            <h2 id="CARP-inner-title" class="font-medium">Desenvolvemos <span class="verde font-bold">sites</span> para o seu negócio, grupo, amigos, família, pet ou <span class="font-bold">quem precisar</span>!</h2>
+            <div class="CARP-inner-blocks">
+                <div class="CARP-block">
+                    <h3 class="CARP-title font-bold">Consultoria</h3>
+                    <p class="CARP-txt font-medium">Prestamos consultoria para que seu site seja impactante no mercado.</p>
+                </div>
+                <div class="CARP-block">
+                    <h3 class="CARP-title font-bold">Assistência</h3>
+                    <p class="CARP-txt font-medium">Assistência pré e pós venda, desde a idealização do projeto até as necessidades posteriores à entrega do produto final.</p>
+                </div>
+                <div class="CARP-block">
+                    <h3 class="CARP-title font-bold">Relacionamento</h3>
+                    <p class="CARP-txt font-medium">Relacionamento próximo e periódico, através de canais de comunicação variados e acessíveis</p>
+                </div>
+                <div class="CARP-block">
+                    <h3 class="CARP-title font-bold">Parcerias</h3>
+                    <p class="CARP-txt font-medium">Se necessário, buscamos parcerias com Empresas Juniores que supram outra necessidade que não envolva exclusivamente o desenvolvimento do site.</p>
+                </div>
+            </div>
+        </div>
+  </section>
+  
+  <section id="diferencial">
+        <h3 id="titulo-diferencial" class="font-bold">Por que nos contratar?</h3>
+        <hr class="traco">
+        <h4 id="subtitulo-diferencial">nosso diferencial</h4>
+        
+        <div id="lista-diferenciais"> 
+            <div class="item-lista-diferenciais">
+                <img class="imagens-redondas primeiro" src="img/diferencial/custo.png" alt="Círculo roxo, com imagem de uma carteira de cor roxa em seu centro, representando o baixo custo.">
+                <h5 class="nome-diferencial font-bold">Custo Acessível</h5>
+                <p class="desc-diferencial font-medium">Soluções com preço abaixo do mercado, acessível para todos.</p>
+            </div>
+            <hr class="ret-cinza rc4">
+            <div class="item-lista-diferenciais">
+                <img class="imagens-redondas" src="img/diferencial/agilidade.png" alt="Círculo roxo, com imagem de um relógio de cabeceira roxo e verde em seu centro, representando a agilidade.">
+                <h5 class="nome-diferencial font-bold">Agilidade</h5>
+                <p class="desc-diferencial font-medium">Rapidez e eficiência no atendimento, com disponibilidade 24h e eficácia nos serviços.</p>
+            </div>
+            <hr class="ret-cinza rc2">
+            <div class="item-lista-diferenciais">
+                <img class="imagens-redondas" src="img/diferencial/qualidade.png" alt="Círculo roxo, com um símbolo de 'correto' de cor roxa em seu centro, representando a qualidade.">
+                <h5 class="nome-diferencial font-bold">Qualidade</h5>
+                <p class="desc-diferencial font-medium">Soluções desenvolvidas com dedicação e cuidado, atendendo às necessidades do cliente.</p>
+            </div>
+            <hr class="ret-cinza rc3">
+            <div class="item-lista-diferenciais">
+                <img class="imagens-redondas" src="img/diferencial/jovens.png" alt="Círculo roxo, com imagem de um planta verde ramificada em seu centro, representando a equipe jovem da empresa. No lugar de flores, a planta apresenta lâmpadas.">
+                <h5 class="nome-diferencial font-bold">Equipe Jovem</h5>
+                <p class="desc-diferencial font-medium">Com flexibilidade e determinação, movidos pela criatividade e facilidade de adaptação.</p>
+            </div>
+        </div>
+        <hr class="ret-cinza rc1">
+        
+        <div id="avaliacao">
+            <h3 id="slogan" class="font-bold">Idealize e Desenvolva!</h3>
+            <button id="btn-avaliacao" class="font-medium" name="botao" onclick="location.href='contato.html';">Solicite um orçamento</button>
+        </div>
+    </section>
+  
+    <footer class="box-footer">
+        <div class="div-footer">
+            <img class= "logo-rodape" src="img/logos/Beets-roxa.png" alt="Logo da Beets Jr, é formada pela união do símbolo de programação e letra 'b', do nome da empresa.">
+        </div>
+        
+        <div class="div-footer">
+            <div class="redes-sociais">
+                <img class="social" src="img/redes sociais/facebook.png" alt="Ícone do rede social Facebook, com link direto para a página da Beets Jr nesta rede social.">
+                <img class="social" src="img/redes sociais/instagram.png" alt="Ícone do rede social Instagram, com link direto para a página da Beets Jr nesta rede social.">
+                <img class="social" src="img/redes sociais/linkedin.png" alt="Ícone do rede social LinkedIn, com link direto para a página da Beets Jr nesta rede social.">
+            </div>
+
+            <div class="direitos-autorais">
+                <p class="footer-txt">@2021 Copyright</p>
+                <p class="footer-txt txt-top">Desenvolvido com amor pelos Beeters</p>
+            </div>
+        </div>
+            
+        <div class="div-footer div-footer3">
+            <div class="contatos">
+                <p class="footer-txt">contato@beetsjr.com.br
+                <p class="footer-txt txt-top">(11) 94462-1690</p>
+            </div>
+            
+            <div class="enderecos">
+                <p class="footer-txt txt-end">Rodovia João Leme dos Santos, km 110 - Bairro Itinga, Sorocaba.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
 </html>

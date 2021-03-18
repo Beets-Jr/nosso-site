@@ -1,0 +1,184 @@
+#fale-conosco {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%; 
+    justify-content: space-around;   
+    margin: 3% auto;
+}
+
+#titulo-fale-conosco {
+    background-color: #b872a2;
+    color: #fff;
+    font-size: 1.6em;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    margin: 2.5% auto -30px auto;
+    padding: 0.8% 3%;
+    height: 85%;
+    text-transform: uppercase;
+}
+
+#linha-fale-conosco {
+    width: 100%;
+    border: 2px dashed #630343;
+    border-style: none none dashed;
+    margin-bottom: 4%;
+    z-index: -1;
+}
+
+#frase-formulario {
+    flex-basis: 100%;
+    text-align: center;
+    color: #630043;
+    margin-bottom: 4%;
+}
+
+@media only screen and (max-width: 650px) {
+    #frase-formulario {
+        margin-top: 4%;
+    }
+}
+
+/* INÍCIO FORMULÁRIO */
+#formulario-div {
+    display: flex;
+    flex-basis: 50%;
+}
+
+#formulario {
+    text-align: right;
+    color: #630043;
+}
+
+.campos-forms {
+    border-radius: 9px;
+    border-color: rgb(138, 128, 128);
+    border-width: 1px;
+    margin: 0 0 5px 10px;
+    padding: 10px 25px;
+    width: 50%;
+    vertical-align: top;
+}
+
+#msg {
+    resize: none;
+}
+
+.btn-enviar {
+    display: block;
+    background-color: #3f8532;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 15%;
+    height: 8%;
+    margin: 5% auto;
+}
+
+#formulario label {
+    display: inline-block;
+    margin-top: 6px;
+}
+
+@media only screen and (max-width: 480px) {
+    .btn-enviar {
+        font-size: 0.7em;
+    }
+}
+/* FIM FORMULÁRIO */
+
+/* INÍCIO CONTATOS (redes sociais, endereço...) */
+#contatos {
+    flex-basis: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10%;
+}
+
+@media only screen and (max-width: 768px) {
+    #formulario-div {
+        flex-basis: 100%;
+    }
+    
+    #contatos, #endereco {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    #endereco, #outros-contatos {
+        margin-top: 5%;
+    }
+}
+
+#contatos div {
+    flex-basis: 100%;
+}
+
+.facebook {
+    width: 55px;
+    height: 55px;
+    position: relative;
+    display: inline-block;
+    background: url(../img/redes\ sociais/facebook.png) no-repeat;
+    background-size: contain;
+    margin-right: 3%;
+    margin-left: -2%;
+}
+
+.facebook:hover {
+    background: url(../img/redes\ sociais/facebook-hover.png) no-repeat;
+    cursor: pointer;
+    background-size: contain;
+}
+
+.instagram {
+    width: 55px;
+    height: 55px;
+    position: relative;
+    display: inline-block;
+    background: url(../img/redes\ sociais/instagram.png) no-repeat;
+    background-size: contain;
+    margin-right: 3%;
+}
+
+.instagram:hover {
+    background: url(../img/redes\ sociais/instagram-hover.png) no-repeat;
+    cursor: pointer;
+    background-size: contain;
+}
+
+.linkedin {
+    width: 55px;
+    height: 55px;
+    position: relative;
+    display: inline-block;
+    background: url(../img/redes\ sociais/linkedin.png) no-repeat;
+    background-size: contain;
+}
+
+.linkedin:hover {
+    background: url(../img/redes\ sociais/linkedin-hover.png) no-repeat;
+    cursor: pointer;
+    background-size: contain;
+}
+
+#outros-contatos {
+    color: #696969; /* ou #4F4F4F */
+}
+
+#outros-contatos a {
+    text-decoration: none;
+    color: #696969;
+}
+
+#outros-contatos p {
+    margin-top: 2%;
+    color: #696969;
+}
+
+#endereco {
+    color: #696969;
+}
+/* FIM CONTATOS (email, telefone...) */
