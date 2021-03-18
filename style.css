@@ -1,17 +1,17 @@
 /* FONTE */
 @font-face {
-    font-family: Qanelas-light;
-    src: url(QanelasSoftUltraLight.otf)
+    font-family: Qanelas-extraBold;
+    src: url(fonts/QanelasSoftExtraBold.otf)
 }
 
 @font-face {
     font-family: Qanelas-bold;
-    src: url(QanelasSoftBold.otf)
+    src: url(fonts/QanelasSoftBold.otf)
 }
 
 @font-face {
     font-family: Qanelas-medium;
-    src: url(QanelasSoftMedium.otf)
+    src: url(fonts/QanelasSoftMedium.otf)
 }
 
 html {
@@ -24,12 +24,16 @@ body {
     padding-top: 80px; /* altura do menu */
 }
 
-.medium {
+.font-medium {
     font-family: 'Qanelas-medium';
 }
 
 .font-bold {
     font-family: 'Qanelas-bold';
+}
+
+.font-extraBold {
+    font-family: 'Qanelas-extraBold';
 }
 
 /*Cor+fundo da fonte quando for selecionada com o mouse*/

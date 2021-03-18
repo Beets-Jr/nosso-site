@@ -1,27 +1,22 @@
-b {
-    font-weight: 900;
-}
-
 #fale-conosco {
     display: flex;
     flex-wrap: wrap;
     width: 90%; 
     justify-content: space-around;   
     margin: 3% auto;
-    font-family: 'Qanelas-medium', Calibri;
 }
 
 #titulo-fale-conosco {
     background-color: #b872a2;
     color: #fff;
     font-size: 1.6em;
-    font-family: 'Qanelas-bold', Calibri;
     text-align: center;
     border: none;
     border-radius: 8px;
     margin: 2.5% auto -30px auto;
     padding: 0.8% 3%;
     height: 85%;
+    text-transform: uppercase;
 }
 
 #linha-fale-conosco {
@@ -52,7 +47,6 @@ b {
 }
 
 #formulario {
-    font-family: Qanelas-bold;
     text-align: right;
     color: #630043;
 }
@@ -77,7 +71,6 @@ b {
     color: #fff;
     border: none;
     border-radius: 5px;
-    font-weight: bold;
     font-size: 1em;
     width: 15%;
     height: 8%;
