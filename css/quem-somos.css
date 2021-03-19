@@ -97,92 +97,66 @@
 }
 
 /* PITCH */
-.pitch {
-    margin-top: 7%;
-    display: flex;
-    margin-bottom: 5%;
-    position: relative;
-}
+#pitch {
+    margin: 8%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 40% auto;
+    grid-template-areas: 
+        "img sup"
+        "img inf";
 
-.img-pitch{
-    width: 37%;
-    height: auto;
-    margin-left: 10%;
-    margin-right: 5%;
-    float: left;
-}
-
-.desc-pitch {
-    float: right;
-    vertical-align: top;
     color: #7f005b;
-    font-size: 1.8em;
-    margin-right: 7%;
     text-align: right;
+    font-size: 1.1em;
 }
 
-.desc-pitch b {
+#imagem-pitch {
+    grid-area: img;
+}
+
+#pitch-superior {
+    grid-area: sup;
+}
+
+#pitch-inferior {
+    grid-area: inf;
+}
+#imagem-pitch img {
+    width: 100%;
+}
+
+.roxo-claro {
     color: #b872a2;
 }
 
-.solucoes {
+.verde {
     color: #3f8532;
 }
 
-@media only screen and (max-width: 1250px){
+@media only screen and (max-width: 768px){
+    #pitch{
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "sup"
+            "img"
+            "inf";
 
-    .img-pitch-mobile{
-        width: 50%;
-        height: auto;
-        left:15%;
-        top:22%;
-        position: absolute;
-    }
-    
-    .pitch-superior{
-        margin-bottom: 25%;
-    }
-    
-    .pitch-inferior{
-        margin-top: 20%;
-    }
-    
-    .desc-pitch{
-        font-size: 1.8em;
-        text-align: center;
-        margin-right: 0px;
-    }
-}
-
-@media only screen and (max-width: 850px) {
-    .img-pitch-mobile {
-        top:20%;
-    } 
-}
-
-@media only screen and (max-width: 700px) {
-    .img-pitch-mobile {
-        top:23%;
-    }
-
-    .desc-pitch {
-        font-size: 1.2em;
-    }
-}
-
-@media only screen and (max-width: 550px) {
-    .img-pitch-mobile {
-        top:21%;
-    }
-    
-    .desc-pitch {
         font-size: 1em;
+        text-align: center;
+    }
+
+    #imagem-pitch img {
+        width: 55%;
     }
 }
 
-@media only screen and (max-width: 350px) {
-    .img-pitch-mobile{
-        top:25%;
+@media only screen and (max-width: 480px){
+    #pitch {
+        font-size: 0.75em;
+    }
+    #imagem-pitch img {
+        width: 70%;
     }
 }
 
