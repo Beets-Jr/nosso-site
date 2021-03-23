@@ -1,3 +1,15 @@
+/* correção do footer na página Contato */
+body {
+    position: relative;
+    min-height: 97vh;
+}
+
+.box-footer {
+    position: absolute;
+    bottom: 0;
+}
+/* fim correção footer */
+
 #fale-conosco {
     display: flex;
     flex-wrap: wrap;

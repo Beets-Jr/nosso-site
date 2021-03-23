@@ -262,6 +262,7 @@ abbr {
 
     .box-footer{
         height: auto;
+        padding-bottom: 3%;
     }
 
     .div-footer, .div-footer3 {
