@@ -15,12 +15,14 @@
 }
 
 html {
-    overflow-x: visible;
+    overflow-x: hidden;
 }
 
 body {
     font-family: 'Qanelas-medium', Calibri;
     overflow-x: hidden;
+    overflow-y: hidden;
+    overscroll-behavior-y: scroll;
     padding-top: 80px; /* altura do menu */
 }
 
