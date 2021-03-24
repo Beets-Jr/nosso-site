@@ -260,6 +260,10 @@ abbr {
         float: left;
     }
 
+    #fale-conosco {
+        padding-bottom: 110%;
+    }
+
     .box-footer{
         height: auto;
         padding-bottom: 3%;
