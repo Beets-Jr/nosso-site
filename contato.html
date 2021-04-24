@@ -46,7 +46,7 @@
                 <label for="email" class="font-extraBold">E-mail:</label>
                 <input type="email" id="email" name="email" class="campos-forms" required placeholder="nome@dominio.com"><br>
                 <label for="tel" class="font-extraBold">Telefone:</label>
-                <input type="tel" id="tel" name="tel" class="campos-forms" required pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}" placeholder="(xx) 00000-0000"><br>
+                <input onkeypress="mascara(this, telefone)" maxlength="15" placeholder="(__) _____-____" type="tel" class="campos-forms" name="tel" required><br>
                 <label for="msg" class="font-extraBold">Mensagem:</label>
                 <textarea cols="40" rows="10" id="msg" name="msg" class="campos-forms" required></textarea>
                 <button type="submit" id="enviar" name="enviar" class="btn-enviar font-bold">Enviar</button>
@@ -96,5 +96,7 @@
             </div>
         </div>
     </footer>
+
+    <script type="text/javascript" src="js/mask.js"></script>
 </body>
 </html>
