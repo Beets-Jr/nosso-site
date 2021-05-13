@@ -72,10 +72,28 @@
     font-weight: bolder;
 }
 
+#descricao {
+    text-align: center;
+    margin: 0 20% 0 20%;
+    color: #630043;
+}
+
+@media only screen and (max-width:768px) {
+    #descricao {
+        margin: 0 8% 10% 8%;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    #descricao {
+        margin-top: 8%;
+    }
+}
+
 /* INÍCIO JORNADA DO CLIENTE DETALHADA */
 #jornada-cliente-detalhada {
     text-align: center;
-    margin: 10% 4% 0 4%;
+    margin: 6% 4% 0 4%;
 }
 
 #titulo-jornada-cliente-detalhada {

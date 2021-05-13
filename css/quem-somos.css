@@ -693,6 +693,10 @@
     margin-right: auto;
 }
 
+.outros-premios {
+    margin-top: 8%;
+}
+
 @media only screen and (max-width: 480px) {
     .imagem-premio {
         width: 50%;
@@ -700,6 +704,10 @@
 
     .desc-premio {
         max-width: 100%;
+    }
+
+    .outros-premios {
+        margin-top: 10%;
     }
 }
 
