@@ -1,0 +1,54 @@
+#politica-privacidade {
+    color: #630043;
+    margin: 5% 5% 8% 5%;
+    text-align: left;
+}
+
+#politica-privacidade h1 {
+    margin-bottom: 4%;
+    text-align: center;
+    font-size: 2em;
+}
+
+#politica-privacidade h2 {
+    margin:0% 6% 0% 6%;
+}
+
+#politica-privacidade p, ol{
+    margin: 0.5% 6% 2% 6%;
+    list-style-type: decimal;
+}
+
+#politica-privacidade li {
+    margin-left: 5%;
+    margin-bottom: 1%;
+}
+
+@media only screen and (max-width: 481px) {
+    #politica-privacidade {
+        margin-top: 8%;
+    }
+
+    #politica-privacidade h1 {
+        margin-bottom: 6%;
+        font-size: 1.7em;
+    }
+
+    #politica-privacidade h2 {
+        margin-top: 8%;
+    }
+
+    #politica-privacidade p, ol {
+        margin: 2% 6% 3% 6%;
+    }
+
+    #politica-privacidade li {
+        margin-left: 8%;
+        margin-bottom: 3%;
+    }
+}
+
+#politica-privacidade a {
+    color: #630043;
+    text-decoration: none;
+}
