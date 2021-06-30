@@ -44,12 +44,30 @@ body {
     flex-basis: 100%;
     text-align: center;
     color: #630043;
+    margin-bottom: 1%;
+}
+
+#frase-politica {
+    flex-basis: 100%;
+    text-align: center;
+    color: #630043;
+    font-size: 0.8em;
     margin-bottom: 4%;
+}
+
+#frase-politica a {
+    color: #630043;
 }
 
 @media only screen and (max-width: 650px) {
     #frase-formulario {
         margin-top: 4%;
+        margin-bottom: 2%;
+    }
+
+    #frase-politica {
+        font-size: 0.7em;;
+        margin: 0 8% 6% 8%;
     }
 }
 
